@@ -1,0 +1,17 @@
+<g
+	xmlns="http://www.w3.org/2000/svg"
+   	xmlns:xlink="http://www.w3.org/1999/xlink"
+	transform="scale(0.8 0.8) translate(153 -79)" >
+	<path
+	    style="fill:none;stroke:#ffffff;stroke-width:2.5;stop-color:#000000"
+	    d="m 63.392133,168.68688 c 0,0 20.653085,-22.07473 28.165414,-22.36182 0.17551,7.26565 -19.908424,29.64732 -19.908424,29.64732 z" />
+	<path
+	    id="fin1"
+	    style="fill:none;stroke:#ffffff;stroke-width:2.5;stop-color:#000000"
+	    d="m 79.93232,166.0914 c 4.793296,4.30629 -1.54848,16.40681 -5.650044,20.22439 2.72924,-4.54519 4.63011,-13.08011 1.645732,-15.19945 z" />
+	<use
+    	x="0"
+        y="0"
+        xlink:href="#fin1"
+        transform="matrix(0,-1,-1,0,237.99294,239.81828)" />
+</g>

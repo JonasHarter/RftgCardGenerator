@@ -1,0 +1,67 @@
+<set name="Base">
+		<card cardType="double"> 
+			<face>
+				<name>Alienarchäologie</name>
+				<cost>1</cost>
+				<phase>1</phase>
+				<text>4$ wenn du mit einem AlienTechnologie-Kundschafter sammelst.</text>
+			</face>
+			<face>
+				<name>Alien Rosettastein-Welt</name>
+				<cost>1</cost>
+				<color>grey</color>
+				<text>Lege 1 neuen AlienTechnologie-Würfel in deine Bevölkerung.</text>
+			</face>
+		</card>
+		<card> 
+			<face>
+				<name>Neu Sparta</name>
+				<cost>2</cost>
+				<color>grey</color>
+				<text>Lege 2 neuen Militär-Würfel in deine Bevölkerung..</text>
+			</face>
+		</card>
+		<card> 
+			<face>
+				<name>Amoklaufender Roboter</name>
+				<cost>2</cost>
+				<color>brown</color>
+				<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
+			</face>
+			<face>
+				<name>Galaktischer Salon</name>
+				<cost>4</cost>
+				<phase>5</phase>
+				<text>1⬡ am Ende der Phase.</text>
+			</face>
+		</card>
+		<card> 
+			<face>
+				<name>Lebende Maschinen</name>
+				<cost>2</cost>
+				<color>grey</color>
+				<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
+			</face>
+			<face>
+				<name>Freihandelsunion</name>
+				<cost>4</cost>
+				<phase>5</phase>
+				<text>1$ am Ende der Phase.</text>
+				<textSp>Sei X die Summe der Kosten deiner Luxusartikel-Welten. Du erhältst ⌈X/2⌉⬡.</textSp>
+			</face>
+		</card>
+		<card> 
+			<face>
+				<name>Alien Aufkärungsroboter</name>
+				<cost>4</cost>
+				<color>yellow</color>
+				<text>Du erhälst 1$. Lege 1 neuen AlienTechnologie-Würfel in deinen Becher.</text>
+			</face>
+			<face>
+				<name>Galaktisches Recycling</name>
+				<cost>2</cost>
+				<phase>2 3</phase>
+				<text>1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
+			</face>
+		</card>
+</set>

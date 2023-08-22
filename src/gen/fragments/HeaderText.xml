@@ -1,0 +1,12 @@
+<flowRoot
+	xmlns="http://www.w3.org/2000/svg"
+    style="font-style:normal;font-weight:bold;font-size:11pt;font-family:sans-serif;fill:#000000;fill-opacity:1;text-align:center;stroke:none">
+    <flowRegion>
+		<path
+     		style="fill:none;stroke:none"
+     		d="M 5,15 190,15 190,40 160,40 160,70 70,70 60,40 5,20 Z" />
+	</flowRegion>
+	<flowPara x="50%" y="50%">
+		header
+	</flowPara>
+</flowRoot>

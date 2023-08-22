@@ -65,4 +65,19 @@
 				<text>1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
 			</face>
 		</card>
+		<card> 
+			<face>
+				<name>Neue Aussteiger</name>
+				<cost>1</cost>
+				<color>lightBlue</color>
+				<text>Lege 1 neuen Luxusartikel-Würfel in deine Bevölkerung.</text>
+			</face>
+			<face>
+				<name>Bergbau Liga</name>
+				<cost>6</cost>
+				<phase>4</phase>
+				<text>1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
+				<textSp>Sei X die Anzahl deiner SeltenenElemente-Welten. Du erhältst 2X⬡.</textSp>
+			</face>
+		</card>
 </set>

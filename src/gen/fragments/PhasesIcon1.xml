@@ -1,14 +1,16 @@
 <g
-	xmlns="http://www.w3.org/2000/svg"
-	transform="scale(0.8,0.8)">
-	<ellipse
-    	style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-        cx="225"
-        cy="88"
-        rx="7.5"
-        ry="7.5"  />
- 	<path
- 		transform="translate(190,70)" 
-        style="fill:none;stroke:#ffffff;stroke-width:2.5;stop-color:#000000"
-        d="M 55,18 C 55,18 45.07503,28.5 35,28.5 24.92497,28.5 15,18 15,18 c 0,0 9.92497,-9.5 20,-9.5 10.07503,-2e-7 20,9.5 20,9.5 z" />
+	xmlns="http://www.w3.org/2000/svg" >
+	<g 
+		transform="scale(0.8,0.8)">
+			<ellipse
+		    	style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+		        cx="225"
+		        cy="88"
+		        rx="7.5"
+		        ry="7.5" />
+		 	<path
+		 		transform="translate(190,70)" 
+		        style="fill:none;stroke:#ffffff;stroke-width:2.5;stop-color:#000000"
+		        d="M 55,18 C 55,18 45.07503,28.5 35,28.5 24.92497,28.5 15,18 15,18 c 0,0 9.92497,-9.5 20,-9.5 10.07503,-2e-7 20,9.5 20,9.5 z" />
+  	</g>
 </g>

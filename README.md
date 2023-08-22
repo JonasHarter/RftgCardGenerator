@@ -1,3 +1,9 @@
+# Roll for the Galaxy Card Generator
+
+A card generator for the Boardgame Roll for the Galaxy
+The intent was to replace the tiles in the game with cards.
+
+All images are AI generated.
 
 # TODO
 

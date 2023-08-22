@@ -18,8 +18,8 @@ public class Face {
 	@XmlElement(name = "name")
 	private String name;
 
-	@XmlElement(name = "nameOverride")
-	private String nameOverride;
+	@XmlElement(name = "nameOverwrite")
+	private String nameOverwrite;
 
 	@XmlElement(name = "cost")
 	private Integer cost;
@@ -40,8 +40,8 @@ public class Face {
 	private String textSp;
 
 	public String getName() {
-		if(nameOverride != null)
-			return nameOverride;
+		if(nameOverwrite != null)
+			return nameOverwrite;
 		return name;
 	}
 

@@ -1,10 +1,17 @@
 package gen.set;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
+import java.util.Optional;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -32,10 +39,12 @@ public class SetBuilder {
 
 	private Set set;
 	private Path outputFolder;
+	private Path imageFolder;
 
-	public SetBuilder(Set set, Path outputFolder)  {
+	public SetBuilder(Set set, Path outputFolder, Path imageFolder)  {
 		this.set = set;
 		this.outputFolder = outputFolder;
+		this.imageFolder = imageFolder;
 	}
 
 	public void buildFaces() throws SetBuilderException {
@@ -74,6 +83,10 @@ public class SetBuilder {
 		}
 
 		private Document buildFace() throws Exception {
+			// Image
+			var imgNode = addImage(loadFragment("Image.xml"), face.getName());
+			if(imgNode.isPresent())
+				parentNode.appendChild(imgNode.get());
 			// TextBgs
 			parentNode.appendChild(loadFragment("HeaderBG.xml"));
 			parentNode.appendChild(loadFragment("TextBG.xml"));
@@ -131,9 +144,31 @@ public class SetBuilder {
 			return fragmentNode;
 		}
 		
+		private Optional<Node> addImage(Node imageNode, String name) throws IOException
+		{
+			var imageFileOpt = lookForImage(name);
+			if(!imageFileOpt.isPresent())
+				return Optional.empty();
+			String encodeBytes = Base64.getEncoder().encodeToString(Files.readAllBytes(imageFileOpt.get().toPath()));
+			Node  hrefAttribute = imageNode.getAttributes().getNamedItem("xlink:href");
+			hrefAttribute.setTextContent("data:image/png;base64," + encodeBytes);
+			return Optional.of(imageNode);
+		}
+		
+		private Optional<File> lookForImage(String name)
+		{
+			for(File file : imageFolder.toFile().listFiles())
+			{
+				if(file.getName().equals(name + ".png"))
+				{
+					return Optional.of(file);
+				}
+			}
+			return Optional.empty();
+		}
+		
 		private Node transformTranslateFragment(Node fragment, int x, int y)
 		{
-			//translate(153 -79)"
 			Attr transformAttr = document.createAttribute("transform");
 			transformAttr.setTextContent("translate(" + x + " " + y + ")");
 			fragment.getAttributes().setNamedItem(transformAttr);

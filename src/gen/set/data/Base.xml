@@ -8,6 +8,7 @@
 			</face>
 			<face>
 				<name>Alien Rosettastein-Welt</name>
+				<nameOverwrite>Rosettaasteroid</nameOverwrite>
 				<cost>1</cost>
 				<color>grey</color>
 				<text>Lege 1 neuen AlienTechnologie-Würfel in deine Bevölkerung.</text>

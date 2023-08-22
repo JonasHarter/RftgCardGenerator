@@ -1,83 +1,196 @@
 <set name="Base">
-		<card cardType="double"> 
-			<face>
-				<name>Alienarchäologie</name>
-				<cost>1</cost>
-				<phase>1</phase>
-				<text>4$ wenn du mit einem AlienTechnologie-Kundschafter sammelst.</text>
-			</face>
-			<face>
-				<name>Alien Rosettastein-Welt</name>
-				<nameOverwrite>Rosettaasteroid</nameOverwrite>
-				<cost>1</cost>
-				<color>grey</color>
-				<text>Lege 1 neuen AlienTechnologie-Würfel in deine Bevölkerung.</text>
-			</face>
-		</card>
-		<card> 
-			<face>
-				<name>Neu Sparta</name>
-				<cost>2</cost>
-				<color>grey</color>
-				<text>Lege 2 neuen Militär-Würfel in deine Bevölkerung..</text>
-			</face>
-		</card>
-		<card> 
-			<face>
-				<name>Amoklaufender Roboter</name>
-				<cost>2</cost>
-				<color>brown</color>
-				<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
-			</face>
-			<face>
-				<name>Galaktischer Salon</name>
-				<cost>4</cost>
-				<phase>5</phase>
-				<text>1⬡ am Ende der Phase.</text>
-			</face>
-		</card>
-		<card> 
-			<face>
-				<name>Lebende Maschinen</name>
-				<cost>2</cost>
-				<color>grey</color>
-				<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
-			</face>
-			<face>
-				<name>Freihandelsunion</name>
-				<cost>4</cost>
-				<phase>5</phase>
-				<text>1$ am Ende der Phase.</text>
-				<textSp>Sei X die Summe der Kosten deiner Luxusartikel-Welten. Du erhältst ⌈X/2⌉⬡.</textSp>
-			</face>
-		</card>
-		<card> 
-			<face>
-				<name>Alien Aufkärungsroboter</name>
-				<cost>4</cost>
-				<color>yellow</color>
-				<text>Du erhälst 1$. Lege 1 neuen AlienTechnologie-Würfel in deinen Becher.</text>
-			</face>
-			<face>
-				<name>Galaktisches Recycling</name>
-				<cost>2</cost>
-				<phase>2 3</phase>
-				<text>1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
-			</face>
-		</card>
-		<card> 
-			<face>
-				<name>Neue Aussteiger</name>
-				<cost>1</cost>
-				<color>lightBlue</color>
-				<text>Lege 1 neuen Luxusartikel-Würfel in deine Bevölkerung.</text>
-			</face>
-			<face>
-				<name>Bergbau Liga</name>
-				<cost>6</cost>
-				<phase>4</phase>
-				<text>1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
-				<textSp>Sei X die Anzahl deiner SeltenenElemente-Welten. Du erhältst 2X⬡.</textSp>
-			</face>
-		</card>
+	<!-- Starting Double Tiles -->
+	<card cardType="double"> 
+		<face>
+			<name>Alienarchäologie</name>
+			<cost>1</cost>
+			<phase>1</phase>
+			<text>4$ wenn du mit einem AlienTechnologie-Kundschafter sammelst.</text>
+		</face>
+		<face>
+			<name>Alien Rosettastein-Welt</name>
+			<nameOverwrite>Rosettaasteroid</nameOverwrite>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Raumpiraterie</name>
+			<cost>0</cost>
+			<phase>5</phase>
+			<text>Sei X die Anzahl der Militär-Würfel in deiner Bevölkerung. Erhalte ⌈X/2⌉ am Ende der Phase.</text>
+		</face>
+		<face>
+			<name>Versteckte Festung</name>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Absatzmärkte</name>
+			<cost>3</cost>
+			<phase>4</phase>
+			<text>1$ am Ende der Phase für jedes Gut auf deinen Luxusartikel-Welten.</text>
+		</face>
+		<face>
+			<name>Orbitales Einkaufszentrum</name>
+			<cost>0</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 neuen Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Bergbau Industrie</name>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>1$ für jedes Gut das du von SelteneElemente-Welten verbrauchst.</text>
+		</face>
+		<face>
+			<name>Meteoritenwelt</name>
+			<nameOverwrite>Meteoritenschwarm</nameOverwrite>
+			<cost>1</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Zerstöre Kolonie</name>
+			<cost>0</cost>
+			<text>Lege 1 Konsum-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Erwachter Alien-Vorposten</name>
+			<cost>3</cost>
+			<color>yellow</color>
+			<text>Lege 1 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Biologische Anpassung</name>
+			<cost>2</cost>
+			<text>Reduziere die Kosten aller Entwicklungen mit einer Versetzen-Fähigkeit um 1 (mindestens 1).</text>
+		</face>
+		<face>
+			<name>Genmanipuliete Hydrowelt</name>
+			<nameOverwrite>Evolutionsgesteuerte Hydrowelt</nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Galaktische Religion</name>
+			<nameOverwrite>Universalreligion</nameOverwrite>
+			<cost>2</cost>
+			<text>1$ am Ende der Phase für jeden Luxusartikel-Würfel in deiner Bevölkerung.</text>
+		</face>
+		<face>
+			<name>Pilgerwelt</name>
+			<nameOverwrite>Pilgerstätte</nameOverwrite>
+			<cost>3</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Verbesserte Aufklärung</name>
+			<nameOverwrite>Fernraum Aufklärung</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst beim Aufklären neue Karten auch auf deine Stapel legen.</text>
+		</face>
+		<face>
+			<name>Wurmloch Station</name>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Genlabor</name>
+			<cost>2</cost>
+			<text>2$ am Ende der Phase für jeden Gen-Würfel auf deinen Welten.</text>
+		</face>
+		<face>
+			<name>Die Letzen der Gnarssh</name>
+			<cost>0</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Neu Sparta</name>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 2 neuen Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Amoklaufender Roboter</name>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Galaktischer Salon</name>
+			<cost>4</cost>
+			<phase>5</phase>
+			<text>1⬡ am Ende der Phase.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Lebende Maschinen</name>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Freihandelsunion</name>
+			<cost>4</cost>
+			<phase>5</phase>
+			<text>1$ am Ende der Phase.</text>
+			<textSp>Sei X die Summe der Kosten deiner Luxusartikel-Welten. Du erhältst ⌈X/2⌉⬡.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alien Aufkärungsroboter</name>
+			<cost>4</cost>
+			<color>yellow</color>
+			<text>Du erhälst 1$. Lege 1 neuen AlienTechnologie-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Galaktisches Recycling</name>
+			<cost>2</cost>
+			<phase>2 3</phase>
+			<text>1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Neue Aussteiger</name>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 neuen Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+		<face>
+			<name>Bergbau Liga</name>
+			<cost>6</cost>
+			<phase>4</phase>
+			<text>1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
+			<textSp>Sei X die Anzahl deiner SeltenenElemente-Welten. Du erhältst 2X⬡.</textSp>
+		</face>
+	</card>
 </set>

@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+java {
+	modularity.inferModulePath = true
+}
+            
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src"]
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+	implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.3'
+	implementation 'org.apache.commons:commons-collections4:4.4'
+	implementation 'org.apache.httpcomponents.client5:httpclient5:5.2.1'
+	implementation 'org.json:json:20230618'
+}

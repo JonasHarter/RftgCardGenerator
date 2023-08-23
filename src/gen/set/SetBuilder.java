@@ -25,6 +25,7 @@ import org.w3c.dom.Text;
 import org.xml.sax.InputSource;
 
 import gen.set.definitions.Card;
+import gen.set.definitions.CardType;
 import gen.set.definitions.Dice;
 import gen.set.definitions.Face;
 import gen.set.definitions.Phase;
@@ -47,12 +48,24 @@ public class SetBuilder {
 
 	public void buildFaces() throws SetBuilderException {
 		int i = 0;
+		Integer doubleTileId = 1;
 		for (Card card : set.getCards()) {
 			for (Face face : card.getFaces()) {
 				try {
-				FaceBuilder builder = new FaceBuilder(face);
-				builder.buildFace();
-				builder.writeToFile(set.getName(), i);
+					FaceBuilder builder = new FaceBuilder(face);
+					if(CardType.STARTER_DOUBLE.equals(card.getCardType()))
+					{
+						builder.buildFace(doubleTileId);
+						if(doubleTileId < 0)
+							doubleTileId = (doubleTileId * -1) + 1;
+						else
+							doubleTileId *= -1;
+					}
+					else if(card.getFaces().size() == 1)
+						builder.buildFace(0);
+					else
+						builder.buildFace(null);
+					builder.writeToFile(set.getName(), i);
 				} catch (Exception e)
 				{
 					throw new SetBuilderException("Failed to build face: " + face.getName(), e);
@@ -80,7 +93,7 @@ public class SetBuilder {
 			parentNode = (Node) document.getDocumentElement();
 		}
 
-		private Document buildFace() throws Exception {
+		private Document buildFace(Integer doubleTileId) throws Exception {
 			// Image
 			var imgNode = addImage(loadFragment("Image.xml"), face.getName());
 			if(imgNode.isPresent())
@@ -126,6 +139,20 @@ public class SetBuilder {
 			if( face.getTextSp() != null)
 				insertDiceTextColoured(rulesTextNode.getChildNodes().item(5), "⬢: " + face.getTextSp());
 			parentNode.appendChild(rulesTextNode);
+			// ID
+			if(doubleTileId != null)
+			{
+				Node idFragment = loadFragment("Id.xml");
+				if(doubleTileId > 0)
+					idFragment = transformTranslateFragment(idFragment, 182, 0);
+				else if(doubleTileId < 0)
+					doubleTileId *= -1;
+				String idString = "";
+				if(doubleTileId != 0)
+					idString = doubleTileId.toString();
+				idFragment.getChildNodes().item(3).getChildNodes().item(3).setTextContent(idString);
+				parentNode.appendChild(idFragment);
+			}
 			// Border
 			parentNode.appendChild(loadFragment("Border.xml"));
 			return document;
@@ -164,7 +191,7 @@ public class SetBuilder {
 		private void writeToFile(String prefix, Integer i) throws Exception {
 			DOMSource source = new DOMSource(document);
 			FileOutputStream out = new FileOutputStream(
-					outputFolder.resolve(prefix + " - " + i + " - " + face.getName() + ".svg").toFile());
+					outputFolder.resolve(prefix + " - " + String.format("%03d", i) + " - " + face.getName() + ".svg").toFile());
 			StreamResult result = new StreamResult(out);
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();

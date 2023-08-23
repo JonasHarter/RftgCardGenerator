@@ -1,0 +1,22 @@
+<g
+	xmlns="http://www.w3.org/2000/svg" >
+	<rect
+	    style="fill:#000000;fill-opacity:1;stroke:#373737;stroke-width:1;stop-color:#000000;stroke-dasharray:none;stroke-opacity:1"
+	    width="20"
+	    height="20"
+	    x="4"
+	    y="4" />
+	<flowRoot
+	    style="font-style:normal;font-weight:bold;font-size:8pt;font-family:sans-serif;fill:#FFFFFF;fill-opacity:1;text-align:center;stroke:none">
+	    <flowRegion>	
+			<rect
+			    width="20"
+			    height="20"
+			    x="4"
+			    y="9" />
+		</flowRegion>
+		<flowPara>
+			0
+		</flowPara>
+	</flowRoot>
+</g>

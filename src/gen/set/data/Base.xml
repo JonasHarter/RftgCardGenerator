@@ -127,14 +127,74 @@
 			<text>Lege 1 Gen-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
+	<!-- Starting Single Tiles -->
 	<card> 
 		<face>
 			<name>Neu Sparta</name>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 2 neuen Militär-Würfel in deine Bevölkerung.</text>
+			<text>Lege 2 Militär-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
+	<card> 
+		<face>
+			<name>Vergessene Erdkolonie</name>
+			<nameOverwrite>Vergessene Kolonie</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Uralte Rasse</name>
+			<cost>0</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Seperatistenkolonie</name>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel auf deinen Becker.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alpha Centauri</name>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Sterbende Welt</name>
+			<cost>0</cost>
+			<color>grey</color>
+			<text>Du startest mit +7$.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Epsilon Eridani</name>
+			<nameOverwrite>Epsilon Eridani b</nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Luxusartikel- und 1 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Terra</name>
+			<cost>3</cost>
+			<color>grey</color>
+			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<!-- Normal Tiles -->
 	<card> 
 		<face>
 			<name>Amoklaufender Roboter</name>

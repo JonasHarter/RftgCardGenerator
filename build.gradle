@@ -22,5 +22,6 @@ dependencies {
 	implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.3'
 	implementation 'org.apache.commons:commons-collections4:4.4'
 	implementation 'org.apache.httpcomponents.client5:httpclient5:5.2.1'
+	implementation 'commons-io:commons-io:2.13.0'
 	implementation 'org.json:json:20230618'
 }

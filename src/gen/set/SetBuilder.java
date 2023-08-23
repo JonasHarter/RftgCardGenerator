@@ -1,6 +1,5 @@
 package gen.set;
 
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,6 +31,7 @@ import gen.set.definitions.Phase;
 import gen.set.definitions.Set;
 import gen.util.StringSplitter;
 import gen.util.StringSplitter.StringType;
+import gen.util.Stuff;
 
 public class SetBuilder {
 
@@ -144,25 +144,13 @@ public class SetBuilder {
 		
 		private Optional<Node> addImage(Node imageNode, String name) throws IOException
 		{
-			var imageFileOpt = lookForImage(name);
+			var imageFileOpt = Stuff.lookForImage(imageFolder, name);
 			if(!imageFileOpt.isPresent())
 				return Optional.empty();
 			String encodeBytes = Base64.getEncoder().encodeToString(Files.readAllBytes(imageFileOpt.get().toPath()));
 			Node  hrefAttribute = imageNode.getAttributes().getNamedItem("xlink:href");
 			hrefAttribute.setTextContent("data:image/png;base64," + encodeBytes);
 			return Optional.of(imageNode);
-		}
-		
-		private Optional<File> lookForImage(String name)
-		{
-			for(File file : imageFolder.toFile().listFiles())
-			{
-				if(file.getName().equals(name + ".png"))
-				{
-					return Optional.of(file);
-				}
-			}
-			return Optional.empty();
 		}
 		
 		private Node transformTranslateFragment(Node fragment, int x, int y)

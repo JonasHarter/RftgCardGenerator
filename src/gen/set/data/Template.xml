@@ -1,0 +1,24 @@
+<set name="Template">
+	<card> 
+		<face>
+			<name></name>
+			<cost></cost>
+			<phase>1 5</phase>
+			<text>Reduziere die Kosten aller Entwicklungen mit einer Versetzen-Fähigkeit um 1 (mindestens 1).</text>
+			<text>Du hast 1 virtuellen Heimat-Verladearbeiter.</text>
+			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Entwicklungen mit Versetzen-Fähigkeiten.</textSp>
+		</face>
+		<face>
+			<name></name>
+			<nameOverwrite></nameOverwrite>
+			<cost></cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
+			<text>Lege 1 Gen-Würfel auf diese Welt.</text>
+			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Luxusartikel- und 1 SelteneElemente-Würfel in deine Bevölkerung.</text>
+			<text>Erhalte 1$.</text>
+			<text>Enferne 1 Würfel.</text>
+		</face>
+	</card>
+</set>

@@ -98,6 +98,8 @@ public class SetBuilder {
 			var imgNode = addImage(loadFragment("Image.xml"), face.getName());
 			if(imgNode.isPresent())
 				parentNode.appendChild(imgNode.get());
+			else
+				System.out.println("No image for: " + face.getName());
 			// TextBgs
 			parentNode.appendChild(loadFragment("HeaderBG.xml"));
 			parentNode.appendChild(loadFragment("TextBG.xml"));

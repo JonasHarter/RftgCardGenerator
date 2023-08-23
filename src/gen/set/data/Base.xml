@@ -5,7 +5,7 @@
 			<name>Alienarchäologie</name>
 			<cost>1</cost>
 			<phase>1</phase>
-			<text>4$ wenn du mit einem AlienTechnologie-Kundschafter sammelst.</text>
+			<text>Erhalte 4$ wenn du mit einem AlienTechnologie-Kundschafter sammelst.</text>
 		</face>
 		<face>
 			<name>Alien Rosettastein-Welt</name>
@@ -20,7 +20,7 @@
 			<name>Raumpiraterie</name>
 			<cost>0</cost>
 			<phase>5</phase>
-			<text>Sei X die Anzahl der Militär-Würfel in deiner Bevölkerung. Erhalte ⌈X/2⌉ am Ende der Phase.</text>
+			<text>Erhalte ⌈X/2⌉⬡ am Ende der Phase, mit X gleich der Anzahl der Militär-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Versteckte Festung</name>
@@ -34,7 +34,7 @@
 			<name>Absatzmärkte</name>
 			<cost>3</cost>
 			<phase>4</phase>
-			<text>1$ am Ende der Phase für jedes Gut auf deinen Luxusartikel-Welten.</text>
+			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf deinen Luxusartikel-Welten.</text>
 		</face>
 		<face>
 			<name>Orbitales Einkaufszentrum</name>
@@ -48,11 +48,11 @@
 			<name>Bergbau Industrie</name>
 			<cost>2</cost>
 			<phase>5</phase>
-			<text>1$ für jedes Gut das du von SelteneElemente-Welten verbrauchst.</text>
+			<text>Erhalte 1$ für jedes Gut das du von SelteneElemente-Welten verbrauchst.</text>
 		</face>
 		<face>
 			<name>Meteoritenwelt</name>
-			<nameOverwrite>Meteoritenschwarm</nameOverwrite>
+			<nameOverwrite>Asteroidengürtel</nameOverwrite>
 			<cost>1</cost>
 			<color>brown</color>
 			<text>Lege 1 SelteneElemente-Würfel in deine Bevölkerung.</text>
@@ -60,7 +60,7 @@
 	</card>
 	<card cardType="double"> 
 		<face>
-			<name>Zerstöre Kolonie</name>
+			<name>Zerstörte Kolonie</name>
 			<cost>0</cost>
 			<text>Lege 1 Konsum-Würfel in deinen Becher.</text>
 		</face>
@@ -90,7 +90,7 @@
 			<name>Galaktische Religion</name>
 			<nameOverwrite>Universalreligion</nameOverwrite>
 			<cost>2</cost>
-			<text>1$ am Ende der Phase für jeden Luxusartikel-Würfel in deiner Bevölkerung.</text>
+			<text>Erhalte 1$ am Ende der Phase für jeden Luxusartikel-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Pilgerwelt</name>
@@ -118,7 +118,7 @@
 		<face>
 			<name>Genlabor</name>
 			<cost>2</cost>
-			<text>2$ am Ende der Phase für jeden Gen-Würfel auf deinen Welten.</text>
+			<text>Erhalte 2$ am Ende der Phase für jeden Gen-Würfel auf deinen Welten.</text>
 		</face>
 		<face>
 			<name>Die Letzen der Gnarssh</name>
@@ -194,48 +194,44 @@
 			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
-	<!-- Normal Tiles -->
 	<card> 
 		<face>
-			<name>Amoklaufender Roboter</name>
-			<cost>2</cost>
-			<color>brown</color>
-			<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
-		</face>
-		<face>
-			<name>Galaktischer Salon</name>
-			<cost>4</cost>
-			<phase>5</phase>
-			<text>1⬡ am Ende der Phase.</text>
+			<name>Defekte Alien Fabrik</name>
+			<nameOverwrite>Multidimensionale Fabrik</nameOverwrite>
+			<cost>1</cost>
+			<color>yellow</color>
+			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
+	<!-- Normal Tiles -->
 	<card> 
 		<face>
 			<name>Lebende Maschinen</name>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 neuen Militär-Würfel in deinen Becher.</text>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Freihandelsunion</name>
 			<cost>4</cost>
 			<phase>5</phase>
-			<text>1$ am Ende der Phase.</text>
-			<textSp>Sei X die Summe der Kosten deiner Luxusartikel-Welten. Du erhältst ⌈X/2⌉⬡.</textSp>
+			<text>Erhalte 1$ am Ende der Phase.</text>
+			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Luxusartikel-Welten.</textSp>
 		</face>
 	</card>
 	<card> 
 		<face>
 			<name>Alien Aufkärungsroboter</name>
+			<nameOverwrite>Experimentelle Aufklärungsstation</nameOverwrite>
 			<cost>4</cost>
 			<color>yellow</color>
-			<text>Du erhälst 1$. Lege 1 neuen AlienTechnologie-Würfel in deinen Becher.</text>
+			<text>Erhalte 1$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Galaktisches Recycling</name>
 			<cost>2</cost>
 			<phase>2 3</phase>
-			<text>1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
+			<text>Erhalte 1$ wenn du eine Entwicklung oder eine Welt fertigstelltst.</text>
 		</face>
 	</card>
 	<card> 
@@ -243,14 +239,795 @@
 			<name>Neue Aussteiger</name>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 neuen Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Bergbau Liga</name>
 			<cost>6</cost>
 			<phase>4</phase>
-			<text>1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
-			<textSp>Sei X die Anzahl deiner SeltenenElemente-Welten. Du erhältst 2X⬡.</textSp>
+			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
+			<textSp>Erhalte 2X⬡, mit X gleich der Anzahl deiner SeltenenElemente-Welten.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Hilfe vor Ort</name>
+			<nameOverwrite>Heimatverein</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst 1 Heimat-Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Ferne Welt</name>
+			<cost>4</cost>
+			<color>green</color>
+			<text>Erhalte 1$. Lege 1 Gen-Würfel auf deinen Becker.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Replikator-Roboter</name>
+			<nameOverwrite>Replikatoren</nameOverwrite>
+			<cost>4</cost>
+			<phase>3</phase>
+			<text>Reduziere die Kosten aller Welten um 1 (mindestens 1).</text>
+		</face>
+		<face>
+			<name>Raumhafen</name>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf deinen Becker.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Raumdock</name>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Du hast 1 virtuellen Heimat-Verladearbeiter.</text>
+		</face>
+		<face>
+			<name>Rüstungswelt</name>
+			<cost>4</cost>
+			<color>brown</color>
+			<text>Erhalte 1$. Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Raumtruppen</name>
+			<cost>3</cost>
+			<text>Enferne 1 Würfel. Erhalte 1$ und lege 1 Militär-Würfel auf deinen Becker.</text>
+		</face>
+		<face>
+			<name>Blühende Welt</name>
+			<cost>3</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Vermessungsroboter</name>
+			<cost>5</cost>
+			<phase>3</phase>
+			<text>Erhalte 2$ am Ende der Phase.</text>
+		</face>
+		<face>
+			<name>Asteroidengürtel</name>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Raumraffinerien</name>
+			<nameOverwrite>Orbitale Raffinerie</nameOverwrite>
+			<cost>3</cost>
+			<phase>5</phase>
+			<text>Erhalte 1⬡ für jedes Gut, das du von einer SelteneElemente-Welt verbrauchst.</text>
+		</face>
+		<face>
+			<name>Aufseher über Genmanipulierte</name>
+			<nameOverwrite>Alpha Mutant</nameOverwrite>
+			<cost>3</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Plan B</name>
+			<cost>1</cost>
+			<text>Du kannst beliebig oft befehlen.</text>
+		</face>
+		<face>
+			<name>Galaktische Trendsetter</name>
+			<nameOverwrite>Interplanetare Trendsetter</nameOverwrite>
+			<cost>6</cost>
+			<color>grey</color>
+			<text>Erhalte 2$. Lege 2 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Isolationismus</name>
+			<cost>3</cost>
+			<text>Du kannst bis zu 2 Kundschafter versetzen.</text>
+		</face>
+		<face>
+			<name>Planetarischer Nebel</name>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Verrückte Wissenschafter</name>
+			<cost>3</cost>
+			<text>Wenn du die meisten Luxusartikel-Welten besitzt, kannst du bis zu 2 Arbeiter versetzen. Bei Gleichstand 1 Arbeiter.</text>
+		</face>
+		<face>
+			<name>Tor-Station</name>
+			<nameOverwrite>Tor Station</nameOverwrite>
+			<cost>3</cost>
+			<color>grey</color>
+			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Investitionskredite</name>
+			<nameOverwrite>Risikoinvestoren</nameOverwrite>
+			<cost>4</cost>
+			<phase>2</phase>
+			<text>Reduziere die Kosten aller Entwicklungen um 1 (mindestens 1).</text>
+		</face>
+		<face>
+			<name>HQ - Galaktische Erkundung</name>
+			<nameOverwrite>Galactozon Firmensitz</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Wehrpflicht</name>
+			<cost>4</cost>
+			<text>Enferne 1 Würfel. Lege 2 Militär-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Kristallplanet</name>
+			<nameOverwrite>Krisalliner Zwergplanet</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Exportzölle</name>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Erhalte 1$ für jedes Gut, das du handelst.</text>
+		</face>
+		<face>
+			<name>Silikonwelt</name>
+			<cost>4</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alien Genmanipulierten-Plan</name>
+			<nameOverwrite>Gesellschaftliche Infiltration</nameOverwrite>
+			<cost>3</cost>
+			<phase>3</phase>
+			<text>Reduziere die Kosten aller Gen- und AlienTechnologie-Welten um 1.</text>
+		</face>
+		<face>
+			<name>Informationsknotenpunkt</name>
+			<cost>3</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>System-Streuung</name>
+			<nameOverwrite>Verteilte Systeme</nameOverwrite>
+			<cost>6</cost>
+			<text>Du kannst bis zu 2 nicht-Heimat-Arbeiter versetzen.</text>
+			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Entwicklungen mit Versetzen-Fähigkeit.</textSp>
+		</face>
+		<face>
+			<name>Rebellen Bergleute</name>
+			<nameOverwrite>Bergarbeiteraufstand</nameOverwrite>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Enferne 1 Würfel. Lege 2 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Gilde der Hydoponiker</name>
+			<cost>1</cost>
+			<text>Du kannst 1 Luxusartikel- oder Gen-Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Alienwächter</name>
+			<nameOverwrite>Antikes Verteidigungssystem</nameOverwrite>
+			<cost>6</cost>
+			<color>yellow</color>
+			<text>Erhalte 3$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Investoren</name>
+			<nameOverwrite>Galaktische Rendite</nameOverwrite>
+			<cost>5</cost>
+			<phase>2</phase>
+			<text>Erhalte 2$ am Ende der Phase.</text>
+		</face>
+		<face>
+			<name>New Vinland</name>
+			<nameOverwrite>Neu Vinland</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Renaissance</name>
+			<cost>6</cost>
+			<phase>5</phase>
+			<text>Erhalte 1⬡ für jedes Gut, das du verbrauchst..</text>
+			<textSp>Erhalte X⬡, mit X gleich dem Index der Dreieckszahl der Anzahl deiner ⬡-Chips.</textSp>
+		</face>
+		<face>
+			<name>Fünfte Kolonie</name>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alien Forschungsschiff</name>
+			<nameOverwrite>Navigatoren Kollektiv</nameOverwrite>
+			<cost>5</cost>
+			<phase>1</phase>
+			<text>Du hast je 1 virtuellen Heimat- und Alientechnologie-Kundschafter.</text>
+		</face>
+		<face>
+			<name>Spice Welt</name>
+			<nameOverwrite>Wüstenplanet</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Vollmacht</name>
+			<nameOverwrite>Planetare Planwirtschaft</nameOverwrite>
+			<cost>3</cost>
+			<text>Beim Befehlen kannst du bis zu 3 Arbeiter vesetzen.</text>
+		</face>
+		<face>
+			<name>Bergbau Planet</name>
+			<nameOverwrite>Kontinentaler Tagebau</nameOverwrite>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Forschungslabors</name>
+			<nameOverwrite>Forschungskomplex</nameOverwrite>
+			<cost>3</cost>
+			<phase>1</phase>
+			<text>Du hast 1 virtuellen Heimat-Kundschafter.</text>
+		</face>
+		<face>
+			<name>Galaktisches Treibstoffdepot</name>
+			<nameOverwrite>Lagrange Treibstoffdepot</nameOverwrite>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Schwerpunkt Kolonisierung</name>
+			<nameOverwrite>Beschleunigte Kolonisierung</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst einen Arbeiter in die Phase Siedeln versetzen.</text>
+		</face>
+		<face>
+			<name>Bösartige Lebensformen</name>
+			<nameOverwrite>Bösartiger Mondwurm</nameOverwrite>
+			<cost>4</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Sprungantriebs-Forschung</name>
+			<nameOverwrite>Sprungantrieb Forschungsinstitut</nameOverwrite>
+			<cost>1</cost>
+			<phase>5</phase>
+			<text>Erhalte 1$ für jedes Gut, das du von einer SelteneElemente-Welt handelst.</text>
+		</face>
+		<face>
+			<name>Verlassene Alien Bibliothek</name>
+			<nameOverwrite>Verbotene Xeno-Bibliothek</nameOverwrite>
+			<cost>6</cost>
+			<color>yellow</color>
+			<text>Erhalte 2$. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Weltraum Tourismus</name>
+			<cost>3</cost>
+			<phase>5</phase>
+			<text>Erhalte 1$ am Ende der Phase. Erhalte 1$ zusätzlich, wenn du allein die Welt mit den höchsten Kosten besitzt.</text>
+		</face>
+		<face>
+			<name>Universalexporte</name>
+			<nameOverwrite>Raumwal Schule</nameOverwrite>
+			<cost>3</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Technologie Gewerkschaften</name>
+			<nameOverwrite>KI-Gewerkschaften</nameOverwrite>
+			<cost>1</cost>
+			<phase>1 4</phase>
+			<text>Erhalte 1$ wenn du am Ende der Phase die Meisten Entwicklungen besitzt.</text>
+		</face>
+		<face>
+			<name>Verlassene Alien Kolonie</name>
+			<nameOverwrite>Entrückte Kolonie</nameOverwrite>
+			<cost>5</cost>
+			<color>yellow</color>
+			<text>Erhalte 1$. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Schwerpunkt Technologie</name>
+			<nameOverwrite>Technologiefokus</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst 1 Arbeiter in die Phase Entwickeln versetzen.</text>
+		</face>
+		<face>
+			<name>Dschungelwelt</name>
+			<nameOverwrite>Dschungelmond</nameOverwrite>
+			<cost>4</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Propagandakampagne</name>
+			<cost>4</cost>
+			<text>Du kannst bis zu 2 Arbeiter in deine gewählte Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Erzreiche Welt</name>
+			<nameOverwrite>Planetarer Supervulkan</nameOverwrite>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Bauarbeiten</name>
+			<nameOverwrite>Effiziente Bürokratie</nameOverwrite>
+			<cost>1</cost>
+			<phase>2</phase>
+			<text>Erhalte 1$ wenn du eine Entwicklung fertigstellst.</text>
+		</face>
+		<face>
+			<name>Vergessenes Alien Kampfschiff</name>
+			<nameOverwrite>Großkampfschiff Wrack</nameOverwrite>
+			<cost>5</cost>
+			<color>yellow</color>
+			<text>Erhalte 2$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Freihandelszone</name>
+			<cost>3</cost>
+			<phase>3</phase>
+			<text>Reduziere die Kosten aller farblosen Welten um 2 (mindestens 2).</text>
+		</face>
+		<face>
+			<name>Galaktisches Resort</name>
+			<cost>3</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Streuung</name>	
+			<cost>1</cost>
+			<text>Du kannst 1 Heimat-Kundschafter versetzen.</text>
+		</face>
+		<face>
+			<name>Arche der vergessenen Arten</name>
+			<nameOverwrite>Gensaat Arche</nameOverwrite>
+			<cost>5</cost>
+			<color>green</color>
+			<text>Erhalte 1$. Lege 1 Gen-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Börse</name>
+			<nameOverwrite>Quantumvernetzte Börse</nameOverwrite>
+			<cost>6</cost>
+			<phase>3</phase>
+			<text>Wenn du eine Welt fertigstellst, kannst du bis zu 2 der beteiligten Siedler zurück in deinen Becher legen.</text>
+			<textSp>Erhalte 1⬡ für jede Würfelfarbe, die du besitzt.</textSp>
+		</face>
+		<face>
+			<name>Raumnormaden Versteck</name>
+			<nameOverwrite>Raumnormaden</nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Neue Galaktische Ordnung</name>
+			<cost>6</cost>
+			<phase>3</phase>
+			<text>Wenn du eine Welt fertigstellst, lege alle beteiligten Militär-Siedler zurück in deinen Becher.</text>
+			<textSp>Erhalte ⌈2X/3⌉⬡, mit X gleich der Anzahl deiner Militär-Würfel.</textSp>
+		</face>
+		<face>
+			<name>Abgeschiedene Welt</name>
+			<nameOverwrite>Abgeschiedene Siedlung</nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Bankier</name>
+			<cost>6</cost>
+			<phase>5</phase>
+			<text>Immer wenn du ein Gut handelst, kannst du 1$ ausgeben um 1⬡ zu erhalten.</text>
+			<text>Du hast 1 virtuellen Heimat-Verladearbeiter.</text>
+			<textSp>Erhalte 1⬡ für jede deiner Entwicklungen.</textSp>
+		</face>
+		<face>
+			<name>Ehemalige Strafkolonie</name>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Enferne 1 Würfel. Lege 1 Militär-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>New Economy</name>
+			<nameOverwrite>Neue Ökonomie</nameOverwrite>
+			<cost>6</cost>
+			<phase>5</phase>
+			<text>Erhalte 2⬡ für jedes Gut, das du verbrauchst.</text>
+			<textSp>Erhalte 1⬡ für jede deiner Entwicklungen ohne Versetzen-Fähigkeit.</textSp>
+		</face>
+		<face>
+			<name>Schwerwelt</name>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Heimatwelt-Patriotismus</name>
+			<nameOverwrite>Patriotismus</nameOverwrite>
+			<cost>3</cost>
+			<text>Du kannst bis zu 2 Heimat-Arbeiter in deine ausgewählte Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Seuchenwelt</name>
+			<cost>3</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Nachfrage</name>
+			<nameOverwrite>Sektorweite Nachfrage</nameOverwrite>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Erhalte 2$ für jedes Gut, das du von einer Luxusartikel-Welt handelst.</text>
+		</face>
+		<face>
+			<name>Verwaister Alien Vorposten</name>
+			<nameOverwrite>Verlassenes Habitat</nameOverwrite>
+			<cost>4</cost>
+			<color>yellow</color>
+			<text>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Föderation</name>
+			<cost>6</cost>
+			<phase>2</phase>
+			<text>Wenn du eine Entwicklung fertigstellst, kannst du bis zu 2 der beteiligten Entwickler zurück in deinen Becher legen.</text>
+			<textSp>Erhalte ⌈X/3⌉⬡, mit X gleich der Summe der Kosten deiner Entwicklungen.</textSp>
+		</face>
+		<face>
+			<name>Künsterkolonie</name>
+			<nameOverwrite>Künsterkommune</nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Reserven</name>
+			<nameOverwrite>Psioniker Logistikprognose</nameOverwrite>
+			<cost>6</cost>
+			<phase>4</phase>
+			<text>Auf jeder deiner Welten kann ein zustäzliches Gut liegen.</text>
+			<textSp>Erhalte 1⬡ für jedes deiner Güter.</textSp>
+		</face>
+		<face>
+			<name>Rebellenversteck</name>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 2 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktischer Salon</name>
+			<nameOverwrite>Interkultureller Salon</nameOverwrite>
+			<cost>4</cost>
+			<phase>5</phase>
+			<text>Erhalte 1⬡ am Ende der Phase.</text>
+		</face>
+		<face>
+			<name>Amoklaufende Roboter</name>
+			<nameOverwrite>Roboter Revolution</nameOverwrite>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Verbesserte Logistik</name>
+			<nameOverwrite>Kontinuierliche Prozessoptimierung</nameOverwrite>
+			<cost>1</cost>
+			<phase>1</phase>
+			<text>Du kannst die Karten deiner Konstruktionszone beliebig umdehen oder umsortieren.</text>
+		</face>
+		<face>
+			<name>Design-Arten KG</name>
+			<nameOverwrite>WunschArten KG</nameOverwrite>
+			<cost>4</cost>
+			<color>green</color>
+			<text>Erhalte 1$. Lege 1 Gen-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Söldnertruppen</name>
+			<nameOverwrite>Söldner</nameOverwrite>
+			<cost>1</cost>
+			<text>Du kannst 1 Militär- oder SelteneElemente-Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Vergessene Alien Kampfflotte</name>
+			<nameOverwrite>Unidentifizierte Flotte</nameOverwrite>
+			<cost>6</cost>
+			<color>yellow</color>
+			<text>Erhalte 3$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+		</face>
+	</card> 
+	<card> 
+		<face>
+			<name>Galaktischer Einfluss</name>
+			<nameOverwrite>Fexible Prozesse</nameOverwrite>
+			<cost>3</cost>
+			<text>Du kannst 1 Arbeiter vesetzen.</text>
+		</face>
+		<face>
+			<name>Sprengkristallmine</name>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 Militär- und 1 SelteneElemente-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Schwerpunkt Verladen</name>
+			<nameOverwrite>Interplanetare Routenplanung</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst einen Arbeiter in die Phase Verladen versetzen.</text>
+		</face>
+		<face>
+			<name>Raumtiefen-Symbionten GmbH</name>
+			<nameOverwrite>Symbionten GmbH</nameOverwrite>
+			<cost>4</cost>
+			<color>green</color>
+			<text>Erhalte 1$. Lege 1 Gen-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Terraforming Roboter</name>
+			<cost>1</cost>
+			<phase>3</phase>
+			<text>Erhalte 1$ wenn du eine Welt fertigstellst. Erhalte 1$ zusätzlich, es eine SelteneElemente-Welt ist.</text>
+		</face>
+		<face>
+			<name>Terraformte Welt</name>
+			<cost>5</cost>
+			<color>grey</color>
+			<text>Erhalte 2$. Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Exekutivgewalt</name>
+			<nameOverwrite>Parallisierte Systeme</nameOverwrite>
+			<cost>3</cost>
+			<text>Du kannst genau 2 Arbeiter in derselben Phase in deine ausgewählte Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Handelswelt</name>
+			<nameOverwrite>Hedonistenforum</nameOverwrite>
+			<cost>3</cost>
+			<color>grey</color>
+			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alien Forschungs-Team</name>
+			<nameOverwrite>Artefaktjäger</nameOverwrite>
+			<cost>3</cost>
+			<phase>1</phase>
+			<text>Ziehe am Ende der Phase eine Karte. Erhalte 1$ wenn mindestens 1 AlienTechnologie-Kundschafter aufgeklärt hat.</text>
+		</face>
+		<face>
+			<name>Rebellen Kriegerrasse</name>
+			<nameOverwrite>Kriegerrasse</nameOverwrite>
+			<cost>3</cost>
+			<color>green</color>
+			<text>Enferne 1 Würfel. Lege 1 Militär- und 1 Gen-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Gilde der Kaufleute</name>
+			<cost>3</cost>
+			<phase>4</phase>
+			<text>Erhalte 2$ am Ende der Phase.</text>
+		</face>
+		<face>
+			<name>FTL-Treibstoff-Raffinerie</name>
+			<nameOverwrite>Lithiumwüste</nameOverwrite>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Nanotechnologie</name>
+			<cost>5</cost>
+			<text>Du kannst bis zu 2 Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Radioaktive Welt</name>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Organische Werften</name>
+			<cost>5</cost>
+			<phase>5</phase>
+			<text>Du hast je 1 virtuellen Heimat- und Gen-Verladearbeiter.</text>
+		</face>
+		<face>
+			<name>Welt der Gesetzlosen</name>
+			<nameOverwrite>Gesetzloses Grenzland</nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Kleine Forschungslabore</name>
+			<nameOverwrite>Wegbereitende Forschung</nameOverwrite>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Erhalte 1⬡ für jedes Gut, das du von einer Gen- oder AlienTechnologie-Welt verbrauchst.</text>
+		</face>
+		<face>
+			<name>Transportknoten</name>
+			<nameOverwrite>Transportnexus</nameOverwrite>
+			<cost>4</cost>
+			<color>grey</color>
+			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Schwerpunkt Durchführung</name>
+			<nameOverwrite>Allokationsgremium</nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst 1 Arbeiter in die Phase Erkunden oder Produzieren versetzen.</text>
+		</face>
+		<face>
+			<name>Ausflugswelt</name>
+			<nameOverwrite>Globaler Freizeitpark</nameOverwrite>
+			<cost>4</cost>
+			<color>grey</color>
+			<text>Erhalte 1$. Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Datenanalyst</name>
+			<nameOverwrite>Datengestützte Bedarfsanalyse</nameOverwrite>
+			<cost>4</cost>
+			<text>Enferne 1 Würfel. Lege 2 Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Piratenwelt</name>
+			<nameOverwrite>Piratenhafen</nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Militär-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Handelsabgaben</name>
+			<nameOverwrite>Importzölle</nameOverwrite>
+			<cost>3</cost>
+			<phase>5</phase>
+			<text>Erhalte 1$ für jedes Gut, das du verbrauchst.</text>
+		</face>
+		<face>
+			<name>Kometenschwarm</name>
+			<cost>3</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 </set>

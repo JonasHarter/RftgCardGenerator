@@ -1,0 +1,17 @@
+<set name="Custom">
+	<card> 
+		<face>
+			<name></name>
+			<cost></cost>
+			<phase></phase>
+			<text></text>
+			<textSp></textSp>
+		</face>
+		<face>
+			<name>x x</name>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deine Bevölkerung. Besitzt du nicht mehr als 1$ lege ihn stattdessen auf diese Welt.</text>
+		</face>
+	</card>
+</set>

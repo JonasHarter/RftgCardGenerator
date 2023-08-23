@@ -17,9 +17,9 @@ improve headertextshape
 
 create html for printing
 
-mark and pair doublecards?
-
 create cards via build action
+
+phase icon for versetzen? Spiralpfeil
 
 //remove shape from model: color means circle, otherwise rhombus
 //Icons? -> too much work. not enough gain. Text is workds fine.
@@ -32,6 +32,7 @@ Improve cardnames via nameAlt?
 UTF for:
 Ceiling ⌈⌉ ⌊⌋
 SP ⬡⬢
+Unused:
 Dice □
 World ○
 Development ◊
@@ -41,3 +42,11 @@ Settling ○
 Development ◊
 Production 🏭
 Shipping 🚀
+
+TextIdeas:
+LithiumWüste
+Subraum X
+Kronkolonie
+Agrarwelt
+Strafkolonie
+Exil

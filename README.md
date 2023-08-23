@@ -21,6 +21,8 @@ create cards via build action
 
 phase icon for versetzen? Spiralpfeil
 
+check for unused images
+
 //remove shape from model: color means circle, otherwise rhombus
 //Icons? -> too much work. not enough gain. Text is workds fine.
 

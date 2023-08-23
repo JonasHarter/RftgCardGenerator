@@ -7,7 +7,7 @@ import jakarta.xml.bind.annotation.adapters.XmlAdapter;
  */
 public enum Color {
 
-	WHITE("white", "000000"), BLACK("black", "FFFFFF"), GREY("grey", "C0C0C0"), YELLOW("yellow", "FFFF00"),
+	WHITE("white", "FFFFFF"), BLACK("black", "000000"), GREY("grey", "C0C0C0"), YELLOW("yellow", "FFFF00"),
 	BROWN("brown", "994C00"), RED("red", "FF0000"), GREEN("green", "00FF00"), LIGHT_BLUE("lightBlue", "00FFFF"),
 	DARK_BLUE("darkBlue", "0000FF"), ORANGE("orange", "FF8000"), VIOLETT("violett", "DB7093");
 

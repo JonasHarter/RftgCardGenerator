@@ -20,7 +20,7 @@
 			<name>Raumpiraterie</name>
 			<cost>0</cost>
 			<phase>5</phase>
-			<text>Erhalte ⌈X/2⌉⬡ am Ende der Phase, mit X gleich der Anzahl der Militär-Würfel in deiner Bevölkerung.</text>
+			<text>Erhalte ⌈X/2⌉$ am Ende der Phase, mit X gleich der Anzahl der Militär-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Versteckte Festung</name>

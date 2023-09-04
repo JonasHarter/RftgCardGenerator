@@ -39,16 +39,20 @@ public class SetBuilder {
 	private Set set;
 	private Path outputFolder;
 	private Path imageFolder;
+	private Integer pairStartingNumber;
 
-	public SetBuilder(Set set, Path outputFolder, Path imageFolder)  {
+	public SetBuilder(Set set, Integer pairStartingNumber, Path outputFolder, Path imageFolder)  {
 		this.set = set;
 		this.outputFolder = outputFolder;
 		this.imageFolder = imageFolder;
+		this.pairStartingNumber = pairStartingNumber;
 	}
 
-	public void buildFaces() throws SetBuilderException {
+	public Integer buildFaces() throws SetBuilderException {
 		int i = 0;
 		Integer doubleTileId = 1;
+		if(pairStartingNumber != null)
+			doubleTileId = pairStartingNumber;
 		for (Card card : set.getCards()) {
 			for (Face face : card.getFaces()) {
 				try {
@@ -73,6 +77,7 @@ public class SetBuilder {
 			}
 			i++;
 		}
+		return doubleTileId;
 	}
 
 	private class FaceBuilder {

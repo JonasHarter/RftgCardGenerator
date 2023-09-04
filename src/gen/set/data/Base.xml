@@ -400,7 +400,7 @@
 		</face>
 		<face>
 			<name>Kristallplanet</name>
-			<nameOverwrite>Krisalliner Zwergplanet</nameOverwrite>
+			<nameOverwrite>Kristalliner Zwergplanet</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
@@ -688,8 +688,8 @@
 			<textSp>Erhalte 1⬡ für jede Würfelfarbe, die du besitzt.</textSp>
 		</face>
 		<face>
-			<name>Raumnormaden Versteck</name>
-			<nameOverwrite>Raumnormaden</nameOverwrite>
+			<name>Raumnomaden Versteck</name>
+			<nameOverwrite>Raumnomaden Konvoi</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>

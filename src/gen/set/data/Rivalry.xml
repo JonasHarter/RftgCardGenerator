@@ -1,0 +1,19 @@
+<set name="Rivalry">
+	<!-- Starting Double Tiles -->
+	<card cardType="double"> 
+		<face>
+			<name>Publicity-Agentur</name>
+			<cost>2</cost>
+			<phase>1</phase>
+			<text>Erhalte 1$ für jeden Entwickler und Siedler in deiner Konstruktionszone.</text>
+		</face>
+		<face>
+			<name>Galaktischer Medienanschluss</name>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 Gründer-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<!-- Starting Single Tiles -->
+	<!-- Normal Tiles -->
+</set>

@@ -1,0 +1,27 @@
+<set name="Rivalry">
+	<!-- Starting Double Tiles -->
+	<!-- Starting Single Tiles -->
+	<card> 
+		<face>
+			<name>Reichhaltiges Spielernetzwerk</name>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Du startest mit +2$. Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<!-- Normal Tiles -->
+	<card> 
+		<face>
+			<name>Terraformierende Kolonie</name>
+			<cost>4</cost>
+			<color>lightBlue</color>
+			<text>Du erhälst 2$. Lege 1 Luxusartikel-Würfel auf diese Welt..</text>
+		</face>
+		<face>
+			<name>Vielseitige Wirtschaft</name>
+			<cost>2</cost>
+			<phase>4</phase>
+			<text>Erhalte 1$ am Ende der Phase, für jede Welt Unterschiedlicher Phase, auf der du ein Gut produziert hast.</text>
+		</face>
+	</card>
+</set>

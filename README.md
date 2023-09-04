@@ -9,6 +9,7 @@ All images are AI generated.
 
 roughly adjust textfont size based on text length.
 allow for textfond size override.
+use different flow shapes depending on phase icons
 
 images
 
@@ -29,7 +30,10 @@ check for unused images
 This uses flowRoot, so inkscape is requried for png conversion
 
 Rebalance startingworlds?
-Improve cardnames via nameAlt?
+
+Change ColorNames? 
+Novelty - Luxusartikel
+Gene - Gen - Genetik
 
 UTF for:
 Ceiling ⌈⌉ ⌊⌋

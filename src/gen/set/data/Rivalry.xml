@@ -3,17 +3,438 @@
 	<card cardType="double"> 
 		<face>
 			<name>Publicity-Agentur</name>
+			<nameOverwrite>Unterschwellige Öffentlichkeitsarbeit</nameOverwrite>
 			<cost>2</cost>
 			<phase>1</phase>
 			<text>Erhalte 1$ für jeden Entwickler und Siedler in deiner Konstruktionszone.</text>
 		</face>
 		<face>
 			<name>Galaktischer Medienanschluss</name>
+			<nameOverwrite>Galaktischer Medienkongress</nameOverwrite>
 			<cost>1</cost>
 			<color>grey</color>
 			<text>Lege 1 Gründer-Würfel in deinen Becher.</text>
 		</face>
 	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Planetare Besiedelung</name>
+			<nameOverwrite>Organisieter Auswanderung</nameOverwrite>
+			<cost>2</cost>
+			<phase>3</phase>
+			<text>Erhalte 1⬡ wenn du eine Welt mit einem Pionier-Siedler fertigstellst.</text>
+		</face>
+		<face>
+			<name>Landwirtschaft-Welt</name>
+			<nameOverwrite>Traditionelle Gesellschaft</nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel- und 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Galaktisches Verrechnungs-Büro</name>
+			<nameOverwrite>Kapitaldiversifikation</nameOverwrite>
+			<cost>1</cost>
+			<phase>5</phase>
+			<text>Erhalte 1$ für jede verschiedenfarbige Welt, von der du ein Gut verbrauchst.</text>
+		</face>
+		<face>
+			<name>Interstellarer Handelshafen</name>
+			<nameOverwrite>Geschützer Transitkorridor</nameOverwrite>
+			<cost>4</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Luxusartikel- und 1 Konsum-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Gen-Medium</name>
+			<nameOverwrite>Sternenseher</nameOverwrite>
+			<cost>1</cost>
+			<phase>2</phase>
+			<text>Jeder Gen-Entwickler verringert die Kosten um 1 (mindestens 1).</text>
+		</face>
+		<face>
+			<name>Stars End</name>
+			<nameOverwrite>Fokus der Galaxis</nameOverwrite>
+			<cost>1</cost>
+			<color>green</color>
+			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Offenkundige Bestimmung</name>
+			<cost>1</cost>
+			<phase>2 3</phase>
+			<text>Erhalte 1$ wenn du eine Karte fertigstellst.</text>
+		</face>
+		<face>
+			<name>Galaktische Expansionisten</name>
+			<nameOverwrite>Kronkolonie</nameOverwrite>
+			<cost>1</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deine Bevölkerung und 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Galaktischer Prognostiker</name>
+			<nameOverwrite>Quantencomputergestützte Prognose</nameOverwrite>
+			<cost>1</cost>
+			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer nicht gewählten Phase in eine gewählte Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Rand der Galaxis</name>
+			<cost>0</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Terraforming-Programm</name>
+			<nameOverwrite>Künstliches Magnetfeld</nameOverwrite>
+			<cost>2</cost>
+			<phase>3</phase>
+			<text>Jeder SelteneElemente-Siedler verringert die Kosten um 1 (mindestens 1).</text>
+		</face>
+		<face>
+			<name>Terraforming Vermesser</name>
+			<nameOverwrite>Geosynchroner Sonnenspiegel</nameOverwrite>
+			<cost>1</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card cardType="double"> 
+		<face>
+			<name>Alien Raffinerie-Technologie</name>
+			<nameOverwrite>Subatomarer 3D-Druck</nameOverwrite>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Tausche jedes Gut, das du von Oortsche Wolke Raffinerie verbraucht hast gegen einen nicht-Anführer-Würfel.</text>
+		</face>
+		<face>
+			<name>Oort-Wolken Raffinierie</name>
+			<nameOverwrite>Oortsche Wolke Raffinerie</nameOverwrite>
+			<cost>2</cost>
+			<color>yellow</color>
+			<text>Du kannst Güter auf dieser Welt nicht handeln. Lege 1 Heimat-Würfel auf diese Welt und 1 Gründer-Würfel in deinen Becher.</text>
+		</face>
+	</card>
 	<!-- Starting Single Tiles -->
+	<card> 
+		<face>
+			<name>Interstellare Händler</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Luxusartikel- und 1 Pionier-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Flüchtlingswelt</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Entferne 1 deiner Würfel und lege 1 Gründer- und 1 Pionier-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Genmanipulierte Bergbau-Maulwürfe</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>0</cost>
+			<color>brown</color>
+			<text>Entferne 1 deiner Würfel und lege 1 SelteneElemente- und 1 Gründer-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Alien Touristenattraktion</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>yellow</color>
+			<text>Lege 1 Gründer-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Anpüassungsfähige Genmanipuliete Rasse</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>1</cost>
+			<color>green</color>
+			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Terraforming Projekt</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Grenzland-Siedler</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>0</cost>
+			<color>grey</color>
+			<text>Lege 1 Militär-Würfel in deine Bevölkerung und 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Expandierende Kolonie</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktische Nachrichtenzentrale</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>0</cost>
+			<color>lightBlue</color>
+			<text>Lege 2 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Lifeforms GmbH</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>0</cost>
+			<color>grey</color>
+			<text>Lege 2 Gen-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
 	<!-- Normal Tiles -->
+	<card> 
+		<face>
+			<name>Machthaber des Imperium</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<phase>4</phase>
+			<text>Erhalte 2$ am Ende der Phase für jeden Militär-Würfel der auf deinen Welten liegt.</text>
+			<textSp>Erhalte ⌈X/3⌉⬡, mit X gleich der Anzahl deiner Würfel.</textSp>
+		</face>
+		<face>
+			<name>Welt der Plünderer</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>1</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Pionier-Würfel in deine Bevölkerung.</text>	
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Kriegsplanung</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>4</cost>
+			<text>Du kannst bis zu 2 Militär-Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Grenzland-Siedlung</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Habitat-Terraforming</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>3</cost>
+			<phase>4</phase>
+			<text>Lege bis zu zwei Würfel aus deiner Bevölkerung auf deine Welten.</text>
+		</face>
+		<face>
+			<name>Rebellen Untergrund</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>3</cost>
+			<color>grey</color>
+			<text>Entferne 1 Siedler, der diese Welt fertiggestellt hat. Lege 1 Militär- und 1 Pionier-Würfel in deine Bevölkerung.</text>
+			<textSp>Erhalte 2⬡.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Galaktisches Imperium</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<text>Entferne 1 deiner Würfel und lege 2 Militär-Würfel in deinen Becher.</text>
+			<textSp>Erhalte 1⬡ für jeden Militär-Würfel.</textSp>
+		</face>
+		<face>
+			<name>Luxusgüter-Hausierer</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Lege 1 Gründer- und 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Kolonialamt</name>
+			<cost>4</cost>
+			<text>Entferne 1 deiner Würfel und lege 2 Pionier-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Vulkanwelt</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>brown</color>
+			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Kriegsvorhersage</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<text>Entferne 2 deiner Würfel und lege 1 Militär- und 1 Gründer-Würfel in deinen Becher.</text>
+		</face>
+		<face>
+			<name>Automatisierte Alien Fabrik</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>4</cost>
+			<color>yellow</color>
+			<text>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Kolonieschiff</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<phase>3</phase>
+			<text>Mischle diese Karte zurück in das Deck und lege die oberste Welt in deiner Konstruktionszone, sofern es keine AlienTechnologie-Welt ist, in deine Auslage.</text>
+		</face>
+		<face>
+			<name>Alien-Archive</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>5</cost>
+			<color>yellow</color>
+			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
+			<textSp>Erhalte 2⬡ für jede AlienTechnologie-Welt.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Gesellschaftliche Anpassung</name>
+			<cost>1</cost>
+			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer gewählten Phase in eine andere gewählte Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Zentralwelt der Föderation</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<color>grey</color>
+			<text>Lege 1 Gründer- und 1 Konsum-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Flexible Produktion</name>
+			<cost>1</cost>
+			<text>Du kannst 1 Luxusartikel- oder SelteneElemente-Arbeiter versetzen.</text>
+		</face>
+		<face>
+			<name>Koalition der Genmanipulierten</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<color>green</color>
+			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Gen-Würfel in deinen Becher.</text>
+			<textSp>Erhalte 1⬡ für jede Gen-Welt.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Vorhersagemodell</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>3</cost>
+			<phase>1</phase>
+			<text>Du kannst bis zu 2 nicht eingesetzte Kundschafter in andere gewählte Phasen versetzen.</text>
+		</face>
+		<face>
+			<name>Geächteter Genmanipulationsgenetiker</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>3</cost>
+			<color>green</color>
+			<text>Du erhälst 2$. Lege 1 Gründer-Würfel in deinen Becher.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Handelsinitiative</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<text>Du kannst 1 Arbeiter in eine spätere Phase versetzen.</text>
+		</face>
+		<face>
+			<name>Sanierte Bergbauwelt</name>
+			<nameOverwrite>Renaturierte Bergbauwelt</nameOverwrite>
+			<cost>4</cost>
+			<color>brown</color>
+			<text>Lege 2 Gründer-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Terraforming Gilde A</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<phase>3</phase>
+			<text>Erhalte 1$ wenn du eine Welt fertigstellst. Ist es eine nicht-graue Welt, kannst du 1 Würfel in der Farbe der Welt darauf legen.</text>
+			<textSp>Erhalte 1⬡ für jede nicht-graue Welt.</textSp>
+		</face>
+		<face>
+			<name>Untergetauchter Warlord</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>grey</color>
+			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Anführer-Würfel in deine Bevölkerung.</text>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>RD Dringlingkeitsprogramm</name>
+			<cost>3</cost>
+			<phase>2</phase>
+			<text>Mischle diese Karte zurück in das Deck und lege die oberste Entwicklung in deiner Konstruktionszone in deine Auslage.</text>
+		</face>
+		<face>
+			<name>Geheimnisvoller Monolith</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>5</cost>
+			<color>grey</color>
+			<textSp>Erhalte 3⬡.</textSp>
+		</face>
+	</card>
+	<card> 
+		<face>
+			<name>Entdecker-Alien</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>6</cost>
+			<phase>1</phase>
+			<text>Erhalte 1$ für jede Gen- und AlienTechnologie-Welt.</text>
+			<textSp>Erhalte ⌈X/3⌉⬡, mit X gleich der Summe der Kosten deiner Gen- und AlienTechnologie-Welten.</textSp>
+		</face>
+		<face>
+			<name>Blühende Kolonie</name>
+			<nameOverwrite></nameOverwrite>
+			<cost>2</cost>
+			<color>lightBlue</color>
+			<text>Entferne 1 deiner Würfel und lege 1 Pionier-Würfel auf diese Welt.</text>
+		</face>
+	</card>
 </set>

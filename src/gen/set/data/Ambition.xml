@@ -66,14 +66,14 @@
 	<card cardType="double"> 
 		<face>
 			<name>Gentechniker für Genmanipulierte</name>
-			<nameOverwrite>Akademie der Adaption</nameOverwrite>
+			<nameOverwrite>Angepasste Kolonisten</nameOverwrite>
 			<cost>1</cost>
 			<phase>3</phase>
 			<text>Erhalte 2$ wenn du eine Welt mit Kosten 3 oder mehr fertigstellst. Erhalte zusätzlich 1$ wenn es eine Gen-Welt ist.</text>
 		</face>
 		<face>
 			<name>Adaptive Genmanipulierte</name>
-			<nameOverwrite>Angepasste Kolonisten</nameOverwrite>
+			<nameOverwrite>Akademie der Adaption</nameOverwrite>
 			<cost>0</cost>
 			<color>green</color>
 			<text>Lege 1 Gründer-Würfel in deine Bevölkerung.</text>
@@ -97,7 +97,7 @@
 	<card cardType="double"> 
 		<face>
 			<name>Genmanipulierte Söldner</name>
-			<nameOverwrite>Supersoldaten</nameOverwrite>
+			<nameOverwrite>Supersöldner</nameOverwrite>
 			<cost>1</cost>
 			<phase>3</phase>
 			<text>Erhalte 2$ für jedes Militär- und Gen-Würfel-Paar, das eine Welt fertigstellt.</text>

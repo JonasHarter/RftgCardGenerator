@@ -44,11 +44,13 @@ public class SetBuilder {
 	public SetBuilder(Set set, Integer pairStartingNumber, Path outputFolder, Path imageFolder)  {
 		this.set = set;
 		this.outputFolder = outputFolder;
-		this.imageFolder = imageFolder;
+		this.imageFolder = imageFolder.resolve(set.getName());
 		this.pairStartingNumber = pairStartingNumber;
 	}
 
 	public Integer buildFaces() throws SetBuilderException {
+		System.out.println("###");
+		System.out.println(set.getName());
 		int i = 0;
 		Integer doubleTileId = 1;
 		if(pairStartingNumber != null)

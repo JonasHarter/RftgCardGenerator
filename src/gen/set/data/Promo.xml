@@ -13,15 +13,17 @@
 	<card> 
 		<face>
 			<name>Terraformierende Kolonie</name>
+			<nameOverwrite>Brückenkopf-Kolonie</nameOverwrite>
 			<cost>4</cost>
 			<color>lightBlue</color>
 			<text>Du erhälst 2$. Lege 1 Luxusartikel-Würfel auf diese Welt..</text>
 		</face>
 		<face>
 			<name>Vielseitige Wirtschaft</name>
+			<nameOverwrite>Pluralistische Gesellschaft</nameOverwrite>
 			<cost>2</cost>
 			<phase>4</phase>
-			<text>Erhalte 1$ am Ende der Phase, für jede Welt Unterschiedlicher Phase, auf der du ein Gut produziert hast.</text>
+			<text>Erhalte 1$ am Ende der Phase, für jede Welt unterschiedlicher Farbe, auf der du ein Gut produziert hast.</text>
 		</face>
 	</card>
 </set>

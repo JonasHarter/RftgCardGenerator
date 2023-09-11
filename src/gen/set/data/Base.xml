@@ -568,7 +568,7 @@
 		</face>
 		<face>
 			<name>Verlassene Alien Bibliothek</name>
-			<nameOverwrite>Verbotene Xeno-Bibliothek</nameOverwrite>
+			<nameOverwrite>Xeno-Bibliothek</nameOverwrite>
 			<cost>6</cost>
 			<color>yellow</color>
 			<text>Erhalte 2$. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
@@ -717,7 +717,6 @@
 			<cost>6</cost>
 			<phase>5</phase>
 			<text>Immer wenn du ein Gut handelst, kannst du 1$ ausgeben um 1⬡ zu erhalten.</text>
-			<text>Du hast 1 virtuellen Heimat-Verladearbeiter.</text>
 			<textSp>Erhalte 1⬡ für jede deiner Entwicklungen.</textSp>
 		</face>
 		<face>

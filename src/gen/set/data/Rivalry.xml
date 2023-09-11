@@ -129,7 +129,7 @@
 	<card> 
 		<face>
 			<name>Interstellare Händler</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Wildtier-Handelsposten</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
 			<text>Lege 1 Luxusartikel- und 1 Pionier-Würfel in deine Bevölkerung.</text>
@@ -138,7 +138,7 @@
 	<card> 
 		<face>
 			<name>Flüchtlingswelt</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Zentralisiertes Flüchtlingslager</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Entferne 1 deiner Würfel und lege 1 Gründer- und 1 Pionier-Würfel in deine Bevölkerung.</text>
@@ -147,7 +147,7 @@
 	<card> 
 		<face>
 			<name>Genmanipulierte Bergbau-Maulwürfe</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Planetenweiter Goldrausch</nameOverwrite>
 			<cost>0</cost>
 			<color>brown</color>
 			<text>Entferne 1 deiner Würfel und lege 1 SelteneElemente- und 1 Gründer-Würfel in deine Bevölkerung.</text>
@@ -156,7 +156,7 @@
 	<card> 
 		<face>
 			<name>Alien Touristenattraktion</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Touristenfalle</nameOverwrite>
 			<cost>2</cost>
 			<color>yellow</color>
 			<text>Lege 1 Gründer-Würfel in deine Bevölkerung.</text>
@@ -165,7 +165,7 @@
 	<card> 
 		<face>
 			<name>Anpüassungsfähige Genmanipuliete Rasse</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Symbiotisches Myzel</nameOverwrite>
 			<cost>1</cost>
 			<color>green</color>
 			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
@@ -174,7 +174,7 @@
 	<card> 
 		<face>
 			<name>Terraforming Projekt</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Äquatorialer Teilchenbeschleuniger</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
 			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
@@ -183,7 +183,7 @@
 	<card> 
 		<face>
 			<name>Grenzland-Siedler</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Besiedeltes Grenzland</nameOverwrite>
 			<cost>0</cost>
 			<color>grey</color>
 			<text>Lege 1 Militär-Würfel in deine Bevölkerung und 1 Pionier-Würfel in deinen Becher.</text>
@@ -191,8 +191,8 @@
 	</card>
 	<card> 
 		<face>
-			<name>Expandierende Kolonie</name>
-			<nameOverwrite></nameOverwrite>
+			<name>Expandierende Kolonie</name>  
+			<nameOverwrite>Fernes Exil</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
@@ -201,7 +201,7 @@
 	<card> 
 		<face>
 			<name>Galaktische Nachrichtenzentrale</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Weltraumaufzug</nameOverwrite>
 			<cost>0</cost>
 			<color>lightBlue</color>
 			<text>Lege 2 Luxusartikel-Würfel in deine Bevölkerung.</text>
@@ -210,7 +210,7 @@
 	<card> 
 		<face>
 			<name>Lifeforms GmbH</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Wiege der Klade</nameOverwrite>
 			<cost>0</cost>
 			<color>grey</color>
 			<text>Lege 2 Gen-Würfel in deine Bevölkerung.</text>

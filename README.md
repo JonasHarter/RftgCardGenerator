@@ -12,6 +12,8 @@ allow for textfond size override.
 use different flow shapes depending on phase icons
 
 images
+image offset x,y tagaturdaytheregularcrowdshuffesin
+
 
 improve centering of cost
 improve headertextshape
@@ -48,11 +50,3 @@ Settling ○
 Development ◊
 Production 🏭
 Shipping 🚀
-
-TextIdeas:
-LithiumWüste
-Subraum X
-Kronkolonie
-Agrarwelt
-Strafkolonie
-Exil

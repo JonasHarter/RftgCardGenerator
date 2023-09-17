@@ -40,7 +40,7 @@ public class Face {
 	private String textSp;
 
 	public String getName() {
-		if(nameOverwrite != null)
+		if(nameOverwrite != null && !nameOverwrite.isEmpty())
 			return nameOverwrite;
 		return name;
 	}

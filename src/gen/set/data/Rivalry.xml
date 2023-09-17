@@ -220,7 +220,7 @@
 	<card> 
 		<face>
 			<name>Machthaber des Imperium</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Machtprojektion</nameOverwrite>
 			<cost>6</cost>
 			<phase>4</phase>
 			<text>Erhalte 2$ am Ende der Phase für jeden Militär-Würfel der auf deinen Welten liegt.</text>
@@ -228,7 +228,7 @@
 		</face>
 		<face>
 			<name>Welt der Plünderer</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Unerforschte Welt</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Pionier-Würfel in deine Bevölkerung.</text>	
@@ -237,13 +237,13 @@
 	<card> 
 		<face>
 			<name>Kriegsplanung</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Strategisch-Operative Planung</nameOverwrite>
 			<cost>4</cost>
 			<text>Du kannst bis zu 2 Militär-Arbeiter versetzen.</text>
 		</face>
 		<face>
 			<name>Grenzland-Siedlung</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Pilger-Kolonie</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
@@ -252,14 +252,14 @@
 	<card> 
 		<face>
 			<name>Habitat-Terraforming</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Bedarfssynchrone Produktion</nameOverwrite>
 			<cost>3</cost>
 			<phase>4</phase>
 			<text>Lege bis zu zwei Würfel aus deiner Bevölkerung auf deine Welten.</text>
 		</face>
 		<face>
 			<name>Rebellen Untergrund</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Siedlung der Vertriebenen</nameOverwrite>
 			<cost>3</cost>
 			<color>grey</color>
 			<text>Entferne 1 Siedler, der diese Welt fertiggestellt hat. Lege 1 Militär- und 1 Pionier-Würfel in deine Bevölkerung.</text>
@@ -269,14 +269,13 @@
 	<card> 
 		<face>
 			<name>Galaktisches Imperium</name>
-			<nameOverwrite></nameOverwrite>
 			<cost>6</cost>
 			<text>Entferne 1 deiner Würfel und lege 2 Militär-Würfel in deinen Becher.</text>
 			<textSp>Erhalte 1⬡ für jeden Militär-Würfel.</textSp>
 		</face>
 		<face>
 			<name>Luxusgüter-Hausierer</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Kaufhaus der zweiten Spähre</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
 			<text>Lege 1 Gründer- und 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
@@ -290,7 +289,7 @@
 		</face>
 		<face>
 			<name>Vulkanwelt</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Magmaozean</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
 			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
@@ -299,13 +298,13 @@
 	<card> 
 		<face>
 			<name>Kriegsvorhersage</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Opportunistische Schlachtenbummler</nameOverwrite>
 			<cost>2</cost>
 			<text>Entferne 2 deiner Würfel und lege 1 Militär- und 1 Gründer-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Automatisierte Alien Fabrik</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Zerstörte Dysonsphäre</nameOverwrite>
 			<cost>4</cost>
 			<color>yellow</color>
 			<text>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
@@ -314,14 +313,13 @@
 	<card> 
 		<face>
 			<name>Kolonieschiff</name>
-			<nameOverwrite></nameOverwrite>
 			<cost>2</cost>
 			<phase>3</phase>
 			<text>Mischle diese Karte zurück in das Deck und lege die oberste Welt in deiner Konstruktionszone, sofern es keine AlienTechnologie-Welt ist, in deine Auslage.</text>
 		</face>
 		<face>
 			<name>Alien-Archive</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Kosmologisches Kuriositätenkabinett</nameOverwrite>
 			<cost>5</cost>
 			<color>yellow</color>
 			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
@@ -331,12 +329,13 @@
 	<card> 
 		<face>
 			<name>Gesellschaftliche Anpassung</name>
+			<nameOverwrite>Orbitale Werft</nameOverwrite>
 			<cost>1</cost>
 			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer gewählten Phase in eine andere gewählte Phase versetzen.</text>
 		</face>
 		<face>
 			<name>Zentralwelt der Föderation</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Schnelllebige Gesellschaft</nameOverwrite>
 			<cost>6</cost>
 			<color>grey</color>
 			<text>Lege 1 Gründer- und 1 Konsum-Würfel in deinen Becher.</text>
@@ -350,7 +349,7 @@
 		</face>
 		<face>
 			<name>Koalition der Genmanipulierten</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Koalition der Mutanten</nameOverwrite>
 			<cost>6</cost>
 			<color>green</color>
 			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Gen-Würfel in deinen Becher.</text>
@@ -360,14 +359,14 @@
 	<card> 
 		<face>
 			<name>Vorhersagemodell</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Flexible Kundschafter</nameOverwrite>
 			<cost>3</cost>
 			<phase>1</phase>
-			<text>Du kannst bis zu 2 nicht eingesetzte Kundschafter in andere gewählte Phasen versetzen.</text>
+			<text>Du kannst bis zu 2 nicht-eingesetzte Kundschafter in andere gewählte Phasen versetzen.</text>
 		</face>
 		<face>
 			<name>Geächteter Genmanipulationsgenetiker</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Exzentrischer Genetiker</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
 			<text>Du erhälst 2$. Lege 1 Gründer-Würfel in deinen Becher.</text>
@@ -376,7 +375,7 @@
 	<card> 
 		<face>
 			<name>Handelsinitiative</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Fortbildungsmaßnahmen</nameOverwrite>
 			<cost>2</cost>
 			<text>Du kannst 1 Arbeiter in eine spätere Phase versetzen.</text>
 		</face>
@@ -391,7 +390,7 @@
 	<card> 
 		<face>
 			<name>Terraforming Gilde A</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Terraforming-Flotte</nameOverwrite>
 			<cost>6</cost>
 			<phase>3</phase>
 			<text>Erhalte 1$ wenn du eine Welt fertigstellst. Ist es eine nicht-graue Welt, kannst du 1 Würfel in der Farbe der Welt darauf legen.</text>
@@ -399,7 +398,7 @@
 		</face>
 		<face>
 			<name>Untergetauchter Warlord</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Loyaler Warlord</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
 			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Anführer-Würfel in deine Bevölkerung.</text>
@@ -408,13 +407,13 @@
 	<card> 
 		<face>
 			<name>RD Dringlingkeitsprogramm</name>
+			<nameOverwrite>Dringlingkeitsprogramm</nameOverwrite>
 			<cost>3</cost>
 			<phase>2</phase>
-			<text>Mischle diese Karte zurück in das Deck und lege die oberste Entwicklung in deiner Konstruktionszone in deine Auslage.</text>
+			<text>Mische diese Karte zurück in das Deck und lege die oberste Entwicklung in deiner Konstruktionszone in deine Auslage.</text>
 		</face>
 		<face>
 			<name>Geheimnisvoller Monolith</name>
-			<nameOverwrite></nameOverwrite>
 			<cost>5</cost>
 			<color>grey</color>
 			<textSp>Erhalte 3⬡.</textSp>
@@ -423,7 +422,7 @@
 	<card> 
 		<face>
 			<name>Entdecker-Alien</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Genetische Hyperraumkarte</nameOverwrite>
 			<cost>6</cost>
 			<phase>1</phase>
 			<text>Erhalte 1$ für jede Gen- und AlienTechnologie-Welt.</text>
@@ -431,7 +430,7 @@
 		</face>
 		<face>
 			<name>Blühende Kolonie</name>
-			<nameOverwrite></nameOverwrite>
+			<nameOverwrite>Großfalmilien-Kolonie</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
 			<text>Entferne 1 deiner Würfel und lege 1 Pionier-Würfel auf diese Welt.</text>

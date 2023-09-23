@@ -50,7 +50,7 @@ public class SetBuilder {
 
 	public Integer buildFaces() throws SetBuilderException {
 		System.out.println("###");
-		System.out.println(set.getName());
+		System.out.println(set.getName() + "(" + set.getCards().size() + ")");
 		int i = 0;
 		Integer doubleTileId = 1;
 		if(pairStartingNumber != null)

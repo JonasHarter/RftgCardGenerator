@@ -3,9 +3,13 @@
 A card generator for the Boardgame Roll for the Galaxy
 The intent was to replace the tiles in the game with cards.
 
-All images are AI generated.
+All images are AI generated with MidJourney.
 
 # TODO
+
+recheck all texts
+
+remove all alien pictures
 
 roughly adjust textfont size based on text length.
 allow for textfond size override.
@@ -13,7 +17,6 @@ use different flow shapes depending on phase icons
 
 images
 image offset x,y tagaturdaytheregularcrowdshuffesin
-
 
 improve centering of cost
 improve headertextshape

@@ -315,7 +315,7 @@
 			<name>Kolonieschiff</name>
 			<cost>2</cost>
 			<phase>3</phase>
-			<text>Mischle diese Karte zurück in das Deck und lege die oberste Welt in deiner Konstruktionszone, sofern es keine AlienTechnologie-Welt ist, in deine Auslage.</text>
+			<text>Mische diese Karte zurück in das Deck und lege die oberste Welt in deiner Konstruktionszone, sofern es keine AlienTechnologie-Welt ist, in deine Auslage.</text>
 		</face>
 		<face>
 			<name>Alien-Archive</name>
@@ -430,7 +430,7 @@
 		</face>
 		<face>
 			<name>Blühende Kolonie</name>
-			<nameOverwrite>Großfalmilien-Kolonie</nameOverwrite>
+			<nameOverwrite>Großfamilien-Kolonie</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
 			<text>Entferne 1 deiner Würfel und lege 1 Pionier-Würfel auf diese Welt.</text>

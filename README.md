@@ -11,14 +11,7 @@ recheck all texts
 
 remove all alien pictures
 
-roughly adjust textfont size based on text length.
-allow for textfond size override.
-use different flow shapes depending on phase icons
-
-images
-image offset x,y tagaturdaytheregularcrowdshuffesin
-
-improve centering of cost
+improve centering of cost and plus
 improve headertextshape
 
 create html for printing

@@ -4,7 +4,7 @@
     <flowRegion>
 		<path
      		style="fill:none;stroke:none"
-     		d="M 5,15 190,15 190,40 160,40 160,70 70,70 60,40 5,20 Z" />
+     		d="M 20,15 190,15 190,70 20,70 Z" />
 	</flowRegion>
 	<flowPara x="50%" y="50%">
 		header

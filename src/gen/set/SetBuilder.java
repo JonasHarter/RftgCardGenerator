@@ -41,7 +41,7 @@ public class SetBuilder {
 	private Path imageFolder;
 	private Integer pairStartingNumber;
 
-	public SetBuilder(Set set, Integer pairStartingNumber, Path outputFolder, Path imageFolder)  {
+	public SetBuilder(Set set, Integer pairStartingNumber, Path outputFolder, Path imageFolder) {
 		this.set = set;
 		this.outputFolder = outputFolder;
 		this.imageFolder = imageFolder.resolve(set.getName());
@@ -53,27 +53,24 @@ public class SetBuilder {
 		System.out.println(set.getName() + "(" + set.getCards().size() + ")");
 		int i = 0;
 		Integer doubleTileId = 1;
-		if(pairStartingNumber != null)
+		if (pairStartingNumber != null)
 			doubleTileId = pairStartingNumber;
 		for (Card card : set.getCards()) {
 			for (Face face : card.getFaces()) {
 				try {
 					FaceBuilder builder = new FaceBuilder(face);
-					if(CardType.STARTER_DOUBLE.equals(card.getCardType()))
-					{
+					if (CardType.STARTER_DOUBLE.equals(card.getCardType())) {
 						builder.buildFace(doubleTileId);
-						if(doubleTileId < 0)
+						if (doubleTileId < 0)
 							doubleTileId = (doubleTileId * -1) + 1;
 						else
 							doubleTileId *= -1;
-					}
-					else if(card.getFaces().size() == 1)
+					} else if (card.getFaces().size() == 1)
 						builder.buildFace(0);
 					else
 						builder.buildFace(null);
 					builder.writeToFile(set.getName(), i);
-				} catch (Exception e)
-				{
+				} catch (Exception e) {
 					throw new SetBuilderException("Failed to build face: " + face.getName(), e);
 				}
 			}
@@ -103,7 +100,7 @@ public class SetBuilder {
 		private Document buildFace(Integer doubleTileId) throws Exception {
 			// Image
 			var imgNode = addImage(loadFragment("Image.xml"), face.getName());
-			if(imgNode.isPresent())
+			if (imgNode.isPresent())
 				parentNode.appendChild(imgNode.get());
 			else
 				System.out.println("No image for: " + face.getName());
@@ -134,8 +131,9 @@ public class SetBuilder {
 				for (int phaseI = 0; phaseI < face.getPhase().size(); phaseI++) {
 					Phase phase = face.getPhase().get(phaseI);
 					int y = phaseI * 50;
-	                parentNode.appendChild(transformTranslateFragment(loadFragment("PhasesIconBG.xml"), 0, y));
-	                parentNode.appendChild(transformTranslateFragment(loadFragment("PhasesIcon" + phase.getValue().toString() + ".xml"), 0, y));
+					parentNode.appendChild(transformTranslateFragment(loadFragment("PhasesIconBG.xml"), 0, y));
+					parentNode.appendChild(transformTranslateFragment(
+							loadFragment("PhasesIcon" + phase.getValue().toString() + ".xml"), 0, y));
 				}
 			}
 			// Header
@@ -144,20 +142,38 @@ public class SetBuilder {
 			parentNode.appendChild(headerTextNode);
 			// Rules with coloured text
 			Node rulesTextNode = loadFragment("RulesText.xml");
-			insertDiceTextColoured(rulesTextNode.getChildNodes().item(3), face.getText());
-			if( face.getTextSp() != null)
-				insertDiceTextColoured(rulesTextNode.getChildNodes().item(5), "⬢: " + face.getTextSp());
+			// setTextSize
+			String rulesText = face.getText();
+			Boolean hasRulesText = rulesText != null;
+			String pointsText = face.getTextSp();
+			Boolean hasPointsText = pointsText != null;
+			Integer textLength = 0;
+			if (hasRulesText) {
+				textLength += rulesText.length();
+			}
+			if (hasPointsText) {
+				pointsText = "⬢: " + pointsText;
+				textLength += pointsText.length();
+			}
+			Integer textSizePt = 8;
+			if (textLength > 170) {
+				textSizePt = 7;
+			}
+			setTextSize(rulesTextNode, textSizePt);
+			if (hasRulesText)
+				insertDiceTextColoured(rulesTextNode.getChildNodes().item(3), rulesText);
+			if (hasPointsText)
+				insertDiceTextColoured(rulesTextNode.getChildNodes().item(5), pointsText);
 			parentNode.appendChild(rulesTextNode);
 			// ID
-			if(doubleTileId != null)
-			{
+			if (doubleTileId != null) {
 				Node idFragment = loadFragment("Id.xml");
-				if(doubleTileId > 0)
+				if (doubleTileId > 0)
 					idFragment = transformTranslateFragment(idFragment, 182, 0);
-				else if(doubleTileId < 0)
+				else if (doubleTileId < 0)
 					doubleTileId *= -1;
 				String idString = "";
-				if(doubleTileId != 0)
+				if (doubleTileId != 0)
 					idString = doubleTileId.toString();
 				idFragment.getChildNodes().item(3).getChildNodes().item(3).setTextContent(idString);
 				parentNode.appendChild(idFragment);
@@ -177,20 +193,18 @@ public class SetBuilder {
 			fragmentNode = document.importNode(fragmentNode, true);
 			return fragmentNode;
 		}
-		
-		private Optional<Node> addImage(Node imageNode, String name) throws IOException
-		{
+
+		private Optional<Node> addImage(Node imageNode, String name) throws IOException {
 			var imageFileOpt = Stuff.lookForImage(imageFolder, name);
-			if(!imageFileOpt.isPresent())
+			if (!imageFileOpt.isPresent())
 				return Optional.empty();
 			String encodeBytes = Base64.getEncoder().encodeToString(Files.readAllBytes(imageFileOpt.get().toPath()));
-			Node  hrefAttribute = imageNode.getAttributes().getNamedItem("xlink:href");
+			Node hrefAttribute = imageNode.getAttributes().getNamedItem("xlink:href");
 			hrefAttribute.setTextContent("data:image/png;base64," + encodeBytes);
 			return Optional.of(imageNode);
 		}
-		
-		private Node transformTranslateFragment(Node fragment, int x, int y)
-		{
+
+		private Node transformTranslateFragment(Node fragment, int x, int y) {
 			Attr transformAttr = document.createAttribute("transform");
 			transformAttr.setTextContent("translate(" + x + " " + y + ")");
 			fragment.getAttributes().setNamedItem(transformAttr);
@@ -199,8 +213,8 @@ public class SetBuilder {
 
 		private void writeToFile(String prefix, Integer i) throws Exception {
 			DOMSource source = new DOMSource(document);
-			FileOutputStream out = new FileOutputStream(
-					outputFolder.resolve(prefix + " - " + String.format("%03d", i) + " - " + face.getName() + ".svg").toFile());
+			FileOutputStream out = new FileOutputStream(outputFolder
+					.resolve(prefix + " - " + String.format("%03d", i) + " - " + face.getName() + ".svg").toFile());
 			StreamResult result = new StreamResult(out);
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
@@ -227,8 +241,15 @@ public class SetBuilder {
 				}
 			}
 		}
+
+		private void setTextSize(Node flowParamNode, Integer pt) {
+			Node styleAttribute = flowParamNode.getAttributes().getNamedItem("style");
+			String styleText = styleAttribute.getTextContent();
+			String styleTextModded = styleText.replace("font-size:8pt", "font-size:" + pt + "pt");
+			styleAttribute.setTextContent(styleTextModded);
+		}
 	}
-	
+
 	public static class SetBuilderException extends Exception {
 		private static final long serialVersionUID = -9078438810344178993L;
 

@@ -490,7 +490,7 @@
 			<name>Galaktische Renaissance</name>
 			<cost>6</cost>
 			<phase>5</phase>
-			<text>Erhalte 1⬡ für jedes Gut, das du verbrauchst..</text>
+			<text>Erhalte 1⬡ für jedes Gut, das du verbrauchst.</text>
 			<textSp>Erhalte X⬡, mit X gleich dem Index der Dreieckszahl der Anzahl deiner ⬡-Chips.</textSp>
 		</face>
 		<face>
@@ -506,7 +506,7 @@
 			<nameOverwrite>Navigatoren Kollektiv</nameOverwrite>
 			<cost>5</cost>
 			<phase>1</phase>
-			<text>Du hast je 1 virtuellen Heimat- und Alientechnologie-Kundschafter.</text>
+			<text>Du hast je 1 virtuellen Heimat- und AlienTechnologie-Kundschafter.</text>
 		</face>
 		<face>
 			<name>Spice Welt</name>
@@ -599,7 +599,7 @@
 			<nameOverwrite>KI-Gewerkschaften</nameOverwrite>
 			<cost>1</cost>
 			<phase>1 4</phase>
-			<text>Erhalte 1$ wenn du am Ende der Phase die Meisten Entwicklungen besitzt.</text>
+			<text>Erhalte 1$ wenn du am Ende der Phase die meisten Entwicklungen besitzt.</text>
 		</face>
 		<face>
 			<name>Verlassene Alien Kolonie</name>

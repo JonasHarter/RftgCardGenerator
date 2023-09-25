@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<svg:svg  baseProfile="full" width="210mm" height="297mm" viewBox="0 0 210 297"
+<svg:svg  baseProfile="full" width="250mm" height="353mm" viewBox="0 0 250 353"
    	version="1.2"
    	xmlns="http://www.w3.org/2000/svg"
-	xmlns:svg="http://www.w3.org/2000/svg" >
+	xmlns:svg="http://www.w3.org/2000/svg" 
+	transform="scale(0.25,0.25)">
+	<g 
+		transform="scale(1.0,1.0)"
+		id="body">
+	</g>
 </svg:svg>

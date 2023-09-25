@@ -95,6 +95,7 @@ public class SetBuilder {
 			documentBuilder = docbf.newDocumentBuilder();
 			document = documentBuilder.parse(inputStream);
 			parentNode = (Node) document.getDocumentElement();
+			parentNode = parentNode.getChildNodes().item(1);
 		}
 
 		private Document buildFace(Integer doubleTileId) throws Exception {
@@ -156,9 +157,9 @@ public class SetBuilder {
 				textLength += pointsText.length();
 			}
 			Integer textSizePt = 8;
-			if (textLength > 170) {
-				textSizePt = 7;
-			}
+//			if (textLength > 170) {
+//				textSizePt = 7;
+//			}
 			setTextSize(rulesTextNode, textSizePt);
 			if (hasRulesText)
 				insertDiceTextColoured(rulesTextNode.getChildNodes().item(3), rulesText);
@@ -169,7 +170,7 @@ public class SetBuilder {
 			if (doubleTileId != null) {
 				Node idFragment = loadFragment("Id.xml");
 				if (doubleTileId > 0)
-					idFragment = transformTranslateFragment(idFragment, 182, 0);
+					idFragment = transformTranslateFragment(idFragment, 222, 0);
 				else if (doubleTileId < 0)
 					doubleTileId *= -1;
 				String idString = "";

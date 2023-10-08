@@ -4,30 +4,20 @@ A card generator for the Boardgame Roll for the Galaxy
 The intent was to replace the tiles in the game with cards.
 
 All images are AI generated with MidJourney.
+This uses flowRoot (from svg 1.2), so inkscape is requried for png conversion
 
 # TODO
-
-recheck all texts
-
-remove all alien pictures
-
-improve centering of cost and plus
-improve headertextshape
-
-create html for printing
-
-create cards via build action
 
 phase icon for versetzen? Spiralpfeil
 
 check for unused images
 
-//remove shape from model: color means circle, otherwise rhombus
+
+# Optional Stuff:
+
+Improve centering & shape of cost and plus
+
 //Icons? -> too much work. not enough gain. Text is workds fine.
-
-This uses flowRoot, so inkscape is requried for png conversion
-
-Rebalance startingworlds?
 
 Change ColorNames? 
 Novelty - Luxusartikel

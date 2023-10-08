@@ -39,8 +39,11 @@ public class Face {
 	@XmlElement(name = "textSp")
 	private String textSp;
 
+	@XmlElement(name = "imageOffset")
+	private Integer imageOffset;
+
 	public String getName() {
-		if(nameOverwrite != null && !nameOverwrite.isEmpty())
+		if (nameOverwrite != null && !nameOverwrite.isEmpty())
 			return nameOverwrite;
 		return name;
 	}
@@ -63,6 +66,10 @@ public class Face {
 
 	public String getTextSp() {
 		return textSp;
+	}
+
+	public Integer getImageOffset() {
+		return imageOffset;
 	}
 
 }

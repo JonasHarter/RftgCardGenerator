@@ -104,7 +104,7 @@
 	<card cardType="double"> 
 		<face>
 			<name>Verbesserte Aufklärung</name>
-			<nameOverwrite>Fernraum Aufklärung</nameOverwrite>
+			<nameOverwrite>Fernraum Observatorium</nameOverwrite>
 			<cost>2</cost>
 			<text>Du kannst beim Aufklären neue Karten auch auf deine Stapel legen.</text>
 		</face>
@@ -332,9 +332,10 @@
 		</face>
 		<face>
 			<name>Aufseher über Genmanipulierte</name>
-			<nameOverwrite>Alpha Mutant</nameOverwrite>
+			<nameOverwrite>Alpha-Mutant</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
+			<imageOffset>30</imageOffset>
 			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -349,6 +350,7 @@
 			<nameOverwrite>Interplanetare Trendsetter</nameOverwrite>
 			<cost>6</cost>
 			<color>grey</color>
+			<imageOffset>30</imageOffset>
 			<text>Erhalte 2$. Lege 2 Konsum-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
@@ -386,6 +388,7 @@
 			<nameOverwrite>Risikoinvestoren</nameOverwrite>
 			<cost>4</cost>
 			<phase>2</phase>
+			<imageOffset>40</imageOffset>
 			<text>Reduziere die Kosten aller Entwicklungen um 1 (mindestens 1).</text>
 		</face>
 		<face>
@@ -430,10 +433,12 @@
 			<nameOverwrite>Gesellschaftliche Infiltration</nameOverwrite>
 			<cost>3</cost>
 			<phase>3</phase>
+			<imageOffset>15</imageOffset>
 			<text>Reduziere die Kosten aller Gen- und AlienTechnologie-Welten um 1.</text>
 		</face>
 		<face>
-			<name>Informationsknotenpunkt</name>
+			<name>Zentralerknotenpunkt</name>
+			<nameOverwrite>Informationsverdichteter Knotenpunkt</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
@@ -503,7 +508,7 @@
 	<card> 
 		<face>
 			<name>Alien Forschungsschiff</name>
-			<nameOverwrite>Navigatoren Kollektiv</nameOverwrite>
+			<nameOverwrite>Navigatoren-Kollektiv</nameOverwrite>
 			<cost>5</cost>
 			<phase>1</phase>
 			<text>Du hast je 1 virtuellen Heimat- und AlienTechnologie-Kundschafter.</text>
@@ -580,14 +585,14 @@
 	</card>
 	<card> 
 		<face>
-			<name>Weltraum Tourismus</name>
+			<name>Weltraumtourismus</name>
 			<cost>3</cost>
 			<phase>5</phase>
-			<text>Erhalte 1$ am Ende der Phase. Erhalte 1$ zusätzlich, wenn du allein die Welt mit den höchsten Kosten besitzt.</text>
+			<text>Erhalte 1$ am Ende der Phase. Erhalte 1$ zusätzlich, wenn du alleine die Welt mit den höchsten Kosten besitzt.</text>
 		</face>
 		<face>
 			<name>Universalexporte</name>
-			<nameOverwrite>Raumwal Schule</nameOverwrite>
+			<nameOverwrite>Raumwal-Schule</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
@@ -628,6 +633,7 @@
 		<face>
 			<name>Propagandakampagne</name>
 			<cost>4</cost>
+			<imageOffset>40</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter in deine gewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -785,8 +791,8 @@
 			<textSp>Erhalte ⌈X/3⌉⬡, mit X gleich der Summe der Kosten deiner Entwicklungen.</textSp>
 		</face>
 		<face>
-			<name>Künsterkolonie</name>
-			<nameOverwrite>Künsterkommune</nameOverwrite>
+			<name>Künstlerkolonie</name>
+			<nameOverwrite>Künstlerkommune</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
@@ -795,7 +801,7 @@
 	<card> 
 		<face>
 			<name>Galaktische Reserven</name>
-			<nameOverwrite>Psioniker Logistikprognose</nameOverwrite>
+			<nameOverwrite>Psioniker-Logistikprognose</nameOverwrite>
 			<cost>6</cost>
 			<phase>4</phase>
 			<text>Auf jeder deiner Welten kann ein zustäzliches Gut liegen.</text>
@@ -814,6 +820,7 @@
 			<nameOverwrite>Interkultureller Salon</nameOverwrite>
 			<cost>4</cost>
 			<phase>5</phase>
+			<imageOffset>30</imageOffset>
 			<text>Erhalte 1⬡ am Ende der Phase.</text>
 		</face>
 		<face>
@@ -821,6 +828,7 @@
 			<nameOverwrite>Roboter Revolution</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
+			<imageOffset>30</imageOffset>
 			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -845,6 +853,7 @@
 			<name>Söldnertruppen</name>
 			<nameOverwrite>Söldner</nameOverwrite>
 			<cost>1</cost>
+			<imageOffset>30</imageOffset>
 			<text>Du kannst 1 Militär- oder SelteneElemente-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -858,7 +867,7 @@
 	<card> 
 		<face>
 			<name>Galaktischer Einfluss</name>
-			<nameOverwrite>Fexible Prozesse</nameOverwrite>
+			<nameOverwrite>Flexible Prozesse</nameOverwrite>
 			<cost>3</cost>
 			<text>Du kannst 1 Arbeiter vesetzen.</text>
 		</face>
@@ -886,7 +895,7 @@
 	</card>
 	<card> 
 		<face>
-			<name>Terraforming Roboter</name>
+			<name>Terraforming-Roboter</name>
 			<cost>1</cost>
 			<phase>3</phase>
 			<text>Erhalte 1$ wenn du eine Welt fertigstellst. Erhalte 1$ zusätzlich, es eine SelteneElemente-Welt ist.</text>
@@ -901,7 +910,7 @@
 	<card> 
 		<face>
 			<name>Exekutivgewalt</name>
-			<nameOverwrite>Parallisierte Systeme</nameOverwrite>
+			<nameOverwrite>Parallelisierte Systeme</nameOverwrite>
 			<cost>3</cost>
 			<text>Du kannst genau 2 Arbeiter in derselben Phase in deine ausgewählte Phase versetzen.</text>
 		</face>
@@ -919,11 +928,12 @@
 			<nameOverwrite>Artefaktjäger</nameOverwrite>
 			<cost>3</cost>
 			<phase>1</phase>
+			<imageOffset>20</imageOffset>
 			<text>Ziehe am Ende der Phase eine Karte. Erhalte 1$ wenn mindestens 1 AlienTechnologie-Kundschafter aufgeklärt hat.</text>
 		</face>
 		<face>
 			<name>Rebellen Kriegerrasse</name>
-			<nameOverwrite>Kriegerrasse</nameOverwrite>
+			<nameOverwrite>Amphitheatrum Galaxicum</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
 			<text>Enferne 1 Würfel. Lege 1 Militär- und 1 Gen-Würfel in deine Bevölkerung.</text>
@@ -948,6 +958,7 @@
 		<face>
 			<name>Nanotechnologie</name>
 			<cost>5</cost>
+			<imageOffset>15</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -969,6 +980,7 @@
 			<nameOverwrite>Gesetzloses Grenzland</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
+			<imageOffset>25</imageOffset>
 			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>

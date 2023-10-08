@@ -38,6 +38,7 @@
 			<nameOverwrite>Beschleunigte Evolution</nameOverwrite>
 			<cost>2</cost>
 			<phase>2</phase>
+			<imageOffset>10</imageOffset>
 			<text>Erhalte 1$ am Ende der Phase für jeden Gen-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
@@ -69,6 +70,7 @@
 			<nameOverwrite>Angepasste Kolonisten</nameOverwrite>
 			<cost>1</cost>
 			<phase>3</phase>
+			<imageOffset>40</imageOffset>
 			<text>Erhalte 2$ wenn du eine Welt mit Kosten 3 oder mehr fertigstellst. Erhalte zusätzlich 1$ wenn es eine Gen-Welt ist.</text>
 		</face>
 		<face>
@@ -100,6 +102,7 @@
 			<nameOverwrite>Supersöldner</nameOverwrite>
 			<cost>1</cost>
 			<phase>3</phase>
+			<imageOffset>20</imageOffset>
 			<text>Erhalte 2$ für jedes Militär- und Gen-Würfel-Paar, das eine Welt fertigstellt.</text>
 		</face>
 		<face>
@@ -161,6 +164,7 @@
 			<nameOverwrite>Imperiale Kriegsgewinnler</nameOverwrite>
 			<cost>2</cost>
 			<phase>4</phase>
+			<imageOffset>20</imageOffset>
 			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf einer SelteneElemente-Welt.</text>
 		</face>
 		<face>

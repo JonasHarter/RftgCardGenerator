@@ -37,7 +37,7 @@ public class PngGenerator {
 			executor.submit(() -> {
 				try {
 					runProcess(file);
-				} catch (PngGeneratorException e) {
+				} catch (Exception e) {
 					System.out.println("Failed for file: " + file.getName());
 					e.printStackTrace();
 				}

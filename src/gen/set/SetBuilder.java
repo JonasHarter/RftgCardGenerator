@@ -100,7 +100,14 @@ public class SetBuilder {
 
 		private Document buildFace(Integer doubleTileId) throws Exception {
 			// Image
-			var imgNode = addImage(loadFragment("Image.xml"), face.getName());
+			Node imageFragment = loadFragment("Image.xml");
+			if (face.getImageOffset() != null) {
+				Node yAtt = imageFragment.getAttributes().getNamedItem("y");
+				Integer yValue = Integer.parseInt(yAtt.getTextContent());
+				yValue += face.getImageOffset();
+				yAtt.setTextContent(yValue.toString());
+			}
+			var imgNode = addImage(imageFragment, face.getName());
 			if (imgNode.isPresent())
 				parentNode.appendChild(imgNode.get());
 			else

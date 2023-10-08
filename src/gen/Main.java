@@ -3,6 +3,7 @@ package gen;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import gen.png.PngGenerator;
 import gen.print.PrintGenerator;
 import gen.set.SetBuilder;
 import gen.set.SetLoader;
@@ -20,6 +21,11 @@ public class Main {
 				.buildFaces();
 		runningInteger = new SetBuilder(SetLoader.loadSet("Promo"), runningInteger, targetPath, imagePath).buildFaces();
 
+		System.out.println();
+		System.out.println("Converting");
+		PngGenerator convert = new PngGenerator(targetPath);
+		convert.convertFiles();
+		
 		System.out.println();
 		System.out.println("Generating print file");
 		PrintGenerator print = new PrintGenerator(targetPath);

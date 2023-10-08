@@ -185,7 +185,7 @@ public class SetBuilder {
 		}
 
 		private InputStream loadRessource(String fileName) {
-			return SetBuilder.class.getResourceAsStream("/gen/fragments/" + fileName);
+			return SetBuilder.class.getResourceAsStream("/gen/set/fragments/" + fileName);
 		}
 
 		private Node loadFragment(String fileName) throws Exception {

@@ -51,30 +51,31 @@ public class SetBuilder {
 	public Integer buildFaces() throws SetBuilderException {
 		System.out.println("###");
 		System.out.println(set.getName() + "(" + set.getCards().size() + ")");
-		int i = 0;
+		int cardId = 0;
 		Integer doubleTileId = 1;
 		if (pairStartingNumber != null)
 			doubleTileId = pairStartingNumber;
 		for (Card card : set.getCards()) {
+			int faceCounter = 0;
 			for (Face face : card.getFaces()) {
 				try {
-					FaceBuilder builder = new FaceBuilder(face);
+					FaceBuilder builder = new FaceBuilder(face, cardId);
 					if (CardType.STARTER_DOUBLE.equals(card.getCardType())) {
-						builder.buildFace(doubleTileId);
-						if (doubleTileId < 0)
-							doubleTileId = (doubleTileId * -1) + 1;
-						else
-							doubleTileId *= -1;
+						builder.setIsStartingTile(true);
 					} else if (card.getFaces().size() == 1)
-						builder.buildFace(0);
-					else
-						builder.buildFace(null);
-					builder.writeToFile(set.getName(), i);
+						builder.setIsStartingPlanet(true);
+					if(faceCounter > 0)
+						builder.setIsSecondFace(true);
+					builder.buildFace(doubleTileId);
+					builder.writeToFile(set.getName());
+					faceCounter++;
+					if(builder.isStartingTile && builder.isSecondFace)
+						doubleTileId++;
 				} catch (Exception e) {
 					throw new SetBuilderException("Failed to build face: " + face.getName(), e);
 				}
 			}
-			i++;
+			cardId++;
 		}
 		return doubleTileId;
 	}
@@ -82,12 +83,18 @@ public class SetBuilder {
 	private class FaceBuilder {
 
 		private Face face;
+		private Integer id;
 		private DocumentBuilder documentBuilder;
 		private Document document;
 		private Node parentNode;
 
-		public FaceBuilder(Face face) throws Exception {
+		private Boolean isStartingTile = false;
+		private Boolean isStartingPlanet = false;
+		private Boolean isSecondFace = false;
+
+		public FaceBuilder(Face face, Integer id) throws Exception {
 			this.face = face;
+			this.id = id;
 			// Load main
 			InputStream inputStream = loadRessource("MainDocument.xml");
 			DocumentBuilderFactory docbf = DocumentBuilderFactory.newInstance();
@@ -96,6 +103,18 @@ public class SetBuilder {
 			document = documentBuilder.parse(inputStream);
 			parentNode = (Node) document.getDocumentElement();
 			parentNode = parentNode.getChildNodes().item(1);
+		}
+
+		public void setIsStartingTile(Boolean isStartingTile) {
+			this.isStartingTile = isStartingTile;
+		}
+
+		public void setIsStartingPlanet(Boolean isStartingPlanet) {
+			this.isStartingPlanet = isStartingPlanet;
+		}
+
+		public void setIsSecondFace(Boolean isSecondFace) {
+			this.isSecondFace = isSecondFace;
 		}
 
 		private Document buildFace(Integer doubleTileId) throws Exception {
@@ -174,18 +193,29 @@ public class SetBuilder {
 				insertDiceTextColoured(rulesTextNode.getChildNodes().item(5), pointsText);
 			parentNode.appendChild(rulesTextNode);
 			// ID
-			if (doubleTileId != null) {
+			if (isStartingTile || isStartingPlanet) {
 				Node idFragment = loadFragment("Id.xml");
-				if (doubleTileId > 0)
+				if(isSecondFace)
 					idFragment = transformTranslateFragment(idFragment, 222, 0);
-				else if (doubleTileId < 0)
-					doubleTileId *= -1;
 				String idString = "";
-				if (doubleTileId != 0)
+				if (isStartingTile)
 					idString = doubleTileId.toString();
 				idFragment.getChildNodes().item(3).getChildNodes().item(3).setTextContent(idString);
 				parentNode.appendChild(idFragment);
 			}
+			// Bottom Id
+			Node bottomIdFragment = loadFragment("BottomId.xml");
+			StringBuilder bottomIdBuilder = new StringBuilder();
+			bottomIdBuilder.append(set.getLetter());
+			bottomIdBuilder.append("-");
+			bottomIdBuilder.append(String.format("%02d", id));
+			bottomIdBuilder.append("-");
+			if (!isSecondFace)
+				bottomIdBuilder.append("A");
+			else
+				bottomIdBuilder.append("B");
+			bottomIdFragment.getChildNodes().item(1).getChildNodes().item(3).setTextContent(bottomIdBuilder.toString());
+			parentNode.appendChild(bottomIdFragment);
 			// Border
 			parentNode.appendChild(loadFragment("Border.xml"));
 			return document;
@@ -219,10 +249,20 @@ public class SetBuilder {
 			return fragment;
 		}
 
-		private void writeToFile(String prefix, Integer i) throws Exception {
+		private void writeToFile(String prefix) throws Exception {
 			DOMSource source = new DOMSource(document);
-			FileOutputStream out = new FileOutputStream(outputFolder
-					.resolve(prefix + " - " + String.format("%03d", i) + " - " + face.getName() + ".svg").toFile());
+			StringBuilder fileNameBuilder = new StringBuilder();
+			fileNameBuilder.append(prefix);
+			fileNameBuilder.append(" - ");
+			fileNameBuilder.append(String.format("%02d", id));
+			if (!isSecondFace)
+				fileNameBuilder.append("A");
+			else
+				fileNameBuilder.append("B");
+			fileNameBuilder.append(" - ");
+			fileNameBuilder.append(face.getName());
+			fileNameBuilder.append(".svg");
+			FileOutputStream out = new FileOutputStream(outputFolder.resolve(fileNameBuilder.toString()).toFile());
 			StreamResult result = new StreamResult(out);
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();

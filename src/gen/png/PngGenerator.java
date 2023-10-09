@@ -24,6 +24,12 @@ public class PngGenerator {
 	}
 
 	public void convertFiles() {
+		// Del images
+		for (File file : targetPath.toFile().listFiles()) {
+			if (!FilenameUtils.getExtension(file.getName()).equals("png"))
+				continue;
+			file.delete();
+		}
 		// Get files
 		List<File> vectorFiles = new ArrayList<>();
 		for (File file : targetPath.toFile().listFiles()) {
@@ -49,6 +55,10 @@ public class PngGenerator {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block 
 			e.printStackTrace();
+		}
+		// Del old files
+		for (File file : vectorFiles) {
+			file.delete();
 		}
 	}
 

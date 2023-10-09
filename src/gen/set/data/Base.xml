@@ -1,4 +1,4 @@
-<set name="Base">
+<set name="Base" letter="B">
 	<!-- Starting Double Tiles -->
 	<card cardType="double"> 
 		<face>
@@ -160,7 +160,7 @@
 			<name>Seperatistenkolonie</name>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 Militär-Würfel auf deinen Becker.</text>
+			<text>Lege 1 Militär-Würfel in deinen Becker.</text>
 		</face>
 	</card>
 	<card> 

@@ -7,11 +7,8 @@ All images are AI generated with MidJourney.
 This uses flowRoot (from svg 1.2), so inkscape is requried for png conversion
 
 # TODO
-
 phase icon for versetzen? Spiralpfeil
-
 check for unused images
-
 
 # Optional Stuff:
 
@@ -23,7 +20,7 @@ Change ColorNames?
 Novelty - Luxusartikel
 Gene - Gen - Genetik
 
-UTF for:
+# UTF Codes
 Ceiling ⌈⌉ ⌊⌋
 SP ⬡⬢
 Unused:

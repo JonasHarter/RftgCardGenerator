@@ -15,12 +15,19 @@ public class Set {
 
 	@XmlAttribute(name = "name")
 	private String name;
+	
+	@XmlAttribute(name = "letter")
+	private String letter;
 
 	@XmlElement(name = "card")
 	private List<Card> cards = new ArrayList<>();
 
 	public String getName() {
 		return name;
+	}
+	
+	public String getLetter() {
+		return letter;
 	}
 
 	public List<Card> getCards() {

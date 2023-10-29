@@ -1,12 +1,14 @@
 <flowRoot
 	xmlns="http://www.w3.org/2000/svg"
-    style="font-style:normal;font-weight:bold;font-size:12pt;font-family:sans-serif;fill:#000000;fill-opacity:1;text-align:center;stroke:none">
+    style="font-size:12pt;fill:#000000;fill-opacity:1;text-align:center;stroke:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DM Serif Display';-inkscape-font-specification:'DM Serif Display'">
     <flowRegion>
 		<path
      		style="fill:none;stroke:none"
      		d="M 20,15 230,15 230,90 20,90 Z" />
 	</flowRegion>
-	<flowPara x="50%" y="50%">
+	<flowPara
+		x="50%"
+		y="50%">
 		header
 	</flowPara>
 </flowRoot>

@@ -1,6 +1,6 @@
 <flowRoot
 	xmlns="http://www.w3.org/2000/svg"
-    style="font-style:normal;font-weight:normal;font-size:9pt;font-family:sans-serif;fill:#000000;fill-opacity:1;text-align:center;stroke:none">
+    style="font-size:9pt;fill:#000000;fill-opacity:1;text-align:center;stroke:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DM Serif Text';-inkscape-font-specification:'DM Serif Text'">
     <flowRegion>
 		<rect
 		    width="240"
@@ -8,6 +8,10 @@
 		    x="5"
 		    y="264.5" />
 	</flowRegion>
-  	<flowPara id="1"></flowPara>
-  	<flowPara id="2"></flowPara>
+  	<flowPara
+  		id="1">
+	</flowPara>
+  	<flowPara
+  		id="2" >
+	</flowPara>
 </flowRoot>

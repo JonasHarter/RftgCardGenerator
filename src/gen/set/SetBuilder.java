@@ -195,7 +195,7 @@ public class SetBuilder {
 			// ID
 			if (isStartingTile || isStartingPlanet) {
 				Node idFragment = loadFragment("Id.xml");
-				if(isSecondFace)
+				if(!isSecondFace)
 					idFragment = transformTranslateFragment(idFragment, 222, 0);
 				String idString = "";
 				if (isStartingTile)
@@ -283,7 +283,7 @@ public class SetBuilder {
 				} else if (splittedTuple.x() == StringType.KEYWORD) {
 					Dice dice = Dice.getByValue(splittedTuple.y());
 					Element element = document.createElement("flowSpan");
-					element.setAttribute("style", "fill:" + dice.getColor().getColorHex());
+					element.setAttribute("style", "stroke:black;stroke-width:.25px;fill:" + dice.getColor().getColorHex());
 					element.setTextContent(dice.getValue());
 					flowParamNode.appendChild(element);
 				}

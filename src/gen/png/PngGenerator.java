@@ -38,7 +38,8 @@ public class PngGenerator {
 			vectorFiles.add(file);
 		}
 		// Convert
-		ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() + 1);
+		// Dont use too much threads
+		ExecutorService executor = Executors.newFixedThreadPool(4);
 		for (File file : vectorFiles) {
 			executor.submit(() -> {
 				try {
@@ -56,20 +57,17 @@ public class PngGenerator {
 			// TODO Auto-generated catch block 
 			e.printStackTrace();
 		}
-		// Del old files
-		for (File file : vectorFiles) {
-			file.delete();
-		}
 	}
 
 	private void runProcess(File file) throws PngGeneratorException {
 		ProcessBuilder processBuilder = new ProcessBuilder(INKSCAPE_PATH.toString(), COMMAND, "\"" + file.getAbsolutePath().toString() + "\"");
-		processBuilder.redirectOutput(Redirect.PIPE);
-		//processBuilder.directory(INKSCAPE_PATH.to);
+		processBuilder.inheritIO();
 		Process process;
 		try {
 			process = processBuilder.start();
-			process.waitFor();
+			int exit = process.waitFor();
+			if(exit != 0)
+				throw new PngGeneratorException("Process exited with " + exit);
 		} catch (IOException e) {
 			throw new PngGeneratorException("Failed to run process", e);
 		} catch (InterruptedException e) {
@@ -83,6 +81,10 @@ public class PngGenerator {
 
 		private PngGeneratorException(String message, Throwable cause) {
 			super(message, cause);
+		}
+
+		public PngGeneratorException(String message) {
+			super(message);
 		}
 
 	}

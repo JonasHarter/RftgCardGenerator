@@ -164,8 +164,13 @@ public class SetBuilder {
 				}
 			}
 			// Header
+			String name = face.getName();
 			Node headerTextNode = loadFragment("HeaderText.xml");
-			headerTextNode.getChildNodes().item(3).setTextContent(face.getName());
+			headerTextNode.getChildNodes().item(3).setTextContent(name);
+			int offset = 5;
+			if(name.length() < 30)
+				offset = 15;
+			headerTextNode = transformTranslateFragment(headerTextNode, 0, offset);
 			parentNode.appendChild(headerTextNode);
 			// Rules with coloured text
 			Node rulesTextNode = loadFragment("RulesText.xml");
@@ -183,9 +188,6 @@ public class SetBuilder {
 				textLength += pointsText.length();
 			}
 			Integer textSizePt = 8;
-//			if (textLength > 170) {
-//				textSizePt = 7;
-//			}
 			setTextSize(rulesTextNode, textSizePt);
 			if (hasRulesText)
 				insertDiceTextColoured(rulesTextNode.getChildNodes().item(3), rulesText);
@@ -281,10 +283,12 @@ public class SetBuilder {
 					Text textNode = document.createTextNode(splittedTuple.y());
 					flowParamNode.appendChild(textNode);
 				} else if (splittedTuple.x() == StringType.KEYWORD) {
+					Text textNode = document.createTextNode(splittedTuple.y());
+					flowParamNode.appendChild(textNode);
 					Dice dice = Dice.getByValue(splittedTuple.y());
 					Element element = document.createElement("flowSpan");
 					element.setAttribute("style", "stroke:black;stroke-width:.25px;fill:" + dice.getColor().getColorHex());
-					element.setTextContent(dice.getValue());
+					element.setTextContent("●");
 					flowParamNode.appendChild(element);
 				}
 			}

@@ -17,6 +17,8 @@ bigger headers and rules text when possible
 phase icon for versetzen? Spiralpfeil
 check for unused images
 
+change bg color back to #bfbfbf for print?
+
 # Optional Stuff:
 
 Improve centering & shape of cost and plus

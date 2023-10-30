@@ -1,17 +1,16 @@
 <set name="Custom">
-	<card> 
+	<card cardType="double"> 
 		<face>
-			<name></name>
-			<cost></cost>
-			<phase></phase>
-			<text></text>
-			<textSp></textSp>
+			<name>xxx</name>
+			<cost>2</cost>
+			<phase>5</phase>
+			<text>Gründer-Würfel zählen als Farben Joker für ship und geben +1credit when trade.</text>
 		</face>
 		<face>
-			<name>x x</name>
-			<cost>2</cost>
-			<color>brown</color>
-			<text>Lege 1 SelteneElemente-Würfel in deine Bevölkerung. Besitzt du nicht mehr als 1$ lege ihn stattdessen auf diese Welt.</text>
+			<name>xxx</name>
+			<cost>0</cost>
+			<colour>lightBlue</colour>
+			<text>Lege 1 Gründer-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 </set>

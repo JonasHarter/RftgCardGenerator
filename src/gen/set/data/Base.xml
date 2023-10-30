@@ -76,6 +76,7 @@
 		<face>
 			<name>Biologische Anpassung</name>
 			<cost>2</cost>
+			<phase>2</phase>
 			<text>Reduziere die Kosten aller Entwicklungen mit einer Versetzen-Fähigkeit um 1 (mindestens 1).</text>
 		</face>
 		<face>
@@ -91,6 +92,7 @@
 			<name>Galaktische Religion</name>
 			<nameOverwrite>Universalreligion</nameOverwrite>
 			<cost>2</cost>
+			<phase>2</phase>
 			<text>Erhalte 1$ am Ende der Phase für jeden Luxusartikel-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
@@ -106,6 +108,7 @@
 			<name>Verbesserte Aufklärung</name>
 			<nameOverwrite>Fernraum Observatorium</nameOverwrite>
 			<cost>2</cost>
+			<phase>1</phase>
 			<text>Du kannst beim Aufklären neue Karten auch auf deine Stapel legen.</text>
 		</face>
 		<face>
@@ -119,6 +122,7 @@
 		<face>
 			<name>Genlabor</name>
 			<cost>2</cost>
+			<phase>4</phase>
 			<text>Erhalte 2$ am Ende der Phase für jeden Gen-Würfel auf deinen Welten.</text>
 		</face>
 		<face>
@@ -247,8 +251,8 @@
 			<name>Bergbau Liga</name>
 			<cost>6</cost>
 			<phase>4</phase>
-			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf einer deiner SeltenenElemente-Welten.</text>
-			<textSp>Erhalte 2X⬡, mit X gleich der Anzahl deiner SeltenenElemente-Welten.</textSp>
+			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf einer deiner SelteneElemente-Welten.</text>
+			<textSp>Erhalte 2X⬡, mit X gleich der Anzahl deiner SelteneElemente-Welten.</textSp>
 		</face>
 	</card>
 	<card> 

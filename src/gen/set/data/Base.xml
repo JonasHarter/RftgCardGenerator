@@ -260,6 +260,7 @@
 			<name>Hilfe vor Ort</name>
 			<nameOverwrite>Heimatverein</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Heimat-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -347,6 +348,7 @@
 		<face>
 			<name>Plan B</name>
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Du kannst beliebig oft befehlen.</text>
 		</face>
 		<face>
@@ -362,6 +364,7 @@
 		<face>
 			<name>Isolationismus</name>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 2 Kundschafter versetzen.</text>
 		</face>
 		<face>
@@ -376,6 +379,7 @@
 		<face>
 			<name>Verrückte Wissenschafter</name>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Wenn du die meisten Luxusartikel-Welten besitzt, kannst du bis zu 2 Arbeiter versetzen. Bei Gleichstand 1 Arbeiter.</text>
 		</face>
 		<face>
@@ -453,6 +457,7 @@
 			<name>System-Streuung</name>
 			<nameOverwrite>Verteilte Systeme</nameOverwrite>
 			<cost>6</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 2 nicht-Heimat-Arbeiter versetzen.</text>
 			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Entwicklungen mit Versetzen-Fähigkeit.</textSp>
 		</face>
@@ -468,6 +473,7 @@
 		<face>
 			<name>Gilde der Hydoponiker</name>
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Luxusartikel- oder Gen-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -530,6 +536,7 @@
 			<name>Galaktische Vollmacht</name>
 			<nameOverwrite>Planetare Planwirtschaft</nameOverwrite>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Beim Befehlen kannst du bis zu 3 Arbeiter vesetzen.</text>
 		</face>
 		<face>
@@ -561,6 +568,7 @@
 			<name>Schwerpunkt Kolonisierung</name>
 			<nameOverwrite>Beschleunigte Kolonisierung</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst einen Arbeiter in die Phase Siedeln versetzen.</text>
 		</face>
 		<face>
@@ -623,6 +631,7 @@
 			<name>Schwerpunkt Technologie</name>
 			<nameOverwrite>Technologiefokus</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Arbeiter in die Phase Entwickeln versetzen.</text>
 		</face>
 		<face>
@@ -637,6 +646,7 @@
 		<face>
 			<name>Propagandakampagne</name>
 			<cost>4</cost>
+			<phase>0</phase>
 			<imageOffset>40</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter in deine gewählte Phase versetzen.</text>
 		</face>
@@ -682,6 +692,7 @@
 		<face>
 			<name>Streuung</name>	
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Heimat-Kundschafter versetzen.</text>
 		</face>
 		<face>
@@ -761,6 +772,7 @@
 			<name>Heimatwelt-Patriotismus</name>
 			<nameOverwrite>Patriotismus</nameOverwrite>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 2 Heimat-Arbeiter in deine ausgewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -857,6 +869,7 @@
 			<name>Söldnertruppen</name>
 			<nameOverwrite>Söldner</nameOverwrite>
 			<cost>1</cost>
+			<phase>0</phase>
 			<imageOffset>30</imageOffset>
 			<text>Du kannst 1 Militär- oder SelteneElemente-Arbeiter versetzen.</text>
 		</face>
@@ -873,6 +886,7 @@
 			<name>Galaktischer Einfluss</name>
 			<nameOverwrite>Flexible Prozesse</nameOverwrite>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Arbeiter vesetzen.</text>
 		</face>
 		<face>
@@ -887,6 +901,7 @@
 			<name>Schwerpunkt Verladen</name>
 			<nameOverwrite>Interplanetare Routenplanung</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst einen Arbeiter in die Phase Verladen versetzen.</text>
 		</face>
 		<face>
@@ -916,6 +931,7 @@
 			<name>Exekutivgewalt</name>
 			<nameOverwrite>Parallelisierte Systeme</nameOverwrite>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Du kannst genau 2 Arbeiter in derselben Phase in deine ausgewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -962,6 +978,7 @@
 		<face>
 			<name>Nanotechnologie</name>
 			<cost>5</cost>
+			<phase>0</phase>
 			<imageOffset>15</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter versetzen.</text>
 		</face>
@@ -1009,6 +1026,7 @@
 			<name>Schwerpunkt Durchführung</name>
 			<nameOverwrite>Allokationsgremium</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Arbeiter in die Phase Erkunden oder Produzieren versetzen.</text>
 		</face>
 		<face>

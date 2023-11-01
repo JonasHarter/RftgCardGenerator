@@ -84,6 +84,7 @@
 			<name>Galaktischer Prognostiker</name>
 			<nameOverwrite>Quantencomputergestützte Prognose</nameOverwrite>
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer nicht gewählten Phase in eine gewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -240,6 +241,7 @@
 			<name>Kriegsplanung</name>
 			<nameOverwrite>Strategisch-Operative Planung</nameOverwrite>
 			<cost>4</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 2 Militär-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -336,6 +338,7 @@
 			<name>Gesellschaftliche Anpassung</name>
 			<nameOverwrite>Orbitale Werft</nameOverwrite>
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer gewählten Phase in eine andere gewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -351,6 +354,7 @@
 		<face>
 			<name>Flexible Produktion</name>
 			<cost>1</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Luxusartikel- oder SelteneElemente-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -383,6 +387,7 @@
 			<name>Handelsinitiative</name>
 			<nameOverwrite>Fortbildungsmaßnahmen</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst 1 Arbeiter in eine spätere Phase versetzen.</text>
 		</face>
 		<face>

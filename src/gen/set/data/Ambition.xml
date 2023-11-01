@@ -54,6 +54,7 @@
 			<name>Planetare Vermesser</name>
 			<nameOverwrite>Planetare Vermessung</nameOverwrite>
 			<cost>2</cost>
+			<phase>0</phase>
 			<text>Du kannst du bis zu 2 Heimat-Arbeiter in die Phasen Erkunden und/oder Siedeln versetzen.</text>
 		</face>
 		<face>
@@ -118,6 +119,7 @@
 			<name>"Starry Rift"-Erkunder</name>
 			<nameOverwrite>Sternenkluft-Erkundung</nameOverwrite>
 			<cost>3</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 2 Arbeiter in die Phase Erkunden versetzen.</text>
 		</face>
 		<face>
@@ -290,6 +292,7 @@
 		<face>
 			<name>Terraforming Unlimited</name>
 			<cost>6</cost>
+			<phase>0</phase>
 			<text>Du kannst bis zu 3 Arbeiter in die Phase Siedeln versetzen.</text>
 			<textSp>Erhalte 3⬡ für jede Welt mit Kosten 4 oder höher.</textSp>
 		</face>
@@ -306,6 +309,7 @@
 			<name>Psi-Kristall-Prognostiker</name>
 			<nameOverwrite>Psioniker Konklave</nameOverwrite>
 			<cost>5</cost>
+			<phase>0</phase>
 			<text>Nach dem Aufdecken kannst du deine ausgewählte Phase noch ändern.</text>
 		</face>
 		<face>

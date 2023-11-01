@@ -5,6 +5,7 @@ import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 public enum Phase
 {
 
+    ASSIGN(0),
     SCOUT(1),
     DEVELOP(2),
     SETTLE(3),

@@ -11,7 +11,6 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.
 
 check for unused images
 starting planets no A/B in id
-phase icon for versetzen? Spiralpfeil
 bigger headers and rules text when possible?
 change bg color back to #bfbfbf for print
 

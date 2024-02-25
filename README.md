@@ -13,6 +13,7 @@ check for unused images
 starting planets no A/B in id
 bigger headers and rules text when possible?
 change bg color back to #bfbfbf for print
+design backside
 
 # Ideas
 

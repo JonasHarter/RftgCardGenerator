@@ -371,7 +371,7 @@
 			<name>Vorhersagemodell</name>
 			<nameOverwrite>Flexible Kundschafter</nameOverwrite>
 			<cost>3</cost>
-			<phase>1</phase>
+			<phase>0 1</phase>
 			<text>Du kannst bis zu 2 nicht-eingesetzte Kundschafter in andere gewählte Phasen versetzen.</text>
 		</face>
 		<face>

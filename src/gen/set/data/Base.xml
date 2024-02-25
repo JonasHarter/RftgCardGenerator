@@ -164,7 +164,7 @@
 			<name>Seperatistenkolonie</name>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 Militär-Würfel in deinen Becker.</text>
+			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -186,7 +186,6 @@
 	<card> 
 		<face>
 			<name>Epsilon Eridani</name>
-			<nameOverwrite>Epsilon Eridani b</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
 			<text>Lege 1 Luxusartikel- und 1 Militär-Würfel in deine Bevölkerung.</text>
@@ -267,7 +266,7 @@
 			<name>Ferne Welt</name>
 			<cost>4</cost>
 			<color>green</color>
-			<text>Erhalte 1$. Lege 1 Gen-Würfel auf deinen Becker.</text>
+			<text>Erhalte 1$. Lege 1 Gen-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -282,7 +281,7 @@
 			<name>Raumhafen</name>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf deinen Becker.</text>
+			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -303,7 +302,7 @@
 		<face>
 			<name>Raumtruppen</name>
 			<cost>3</cost>
-			<text>Enferne 1 Würfel. Erhalte 1$ und lege 1 Militär-Würfel auf deinen Becker.</text>
+			<text>Enferne 1 Würfel. Erhalte 1$ und lege 1 Militär-Würfel auf deinen Becher.</text>
 		</face>
 		<face>
 			<name>Blühende Welt</name>

@@ -341,7 +341,7 @@
 			<nameOverwrite>Landungstruppen</nameOverwrite>
 			<cost>1</cost>
 			<phase>3</phase>
-			<text>Bevor du eine Welt fertigstellst, kannst 1 Militär-Würfel ausgeben, um die Kosten um 3 zu reduzieren (mindestens 1).</text>
+			<text>Bevor du eine Welt fertigstellst, kannst 1 Militär-Würfel entfernen, um die Kosten um 3 zu reduzieren (mindestens 1).</text>
 		</face>
 		<face>
 			<name>Rebellen Festung</name>

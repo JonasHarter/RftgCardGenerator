@@ -4,7 +4,7 @@ A card generator for the Boardgame Roll for the Galaxy<br />
 The intent was to replace the tiles in the game with cards.<br />
 
 All images are AI generated with MidJourney.<br />
-This uses flowRoot (from svg 1.2), so Inkscape is probably requried for png conversion.<br />
+This uses Inkscape and flowRoot (from svg 1.2), for conversion to png.<br />
 This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<br />
 
 # Ideas

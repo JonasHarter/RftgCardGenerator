@@ -19,6 +19,7 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 <img src="/readMe/5.png" width="200" />
 <img src="/readMe/6.png" width="200" />
 <img src="/readMe/7.png" width="200" />
+<img src="/readMe/8.png" width="200" />
 </p>
 
 The double-sized starting tiles are split, but marked with a black square that contains a number at the top corner.

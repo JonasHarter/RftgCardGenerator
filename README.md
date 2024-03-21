@@ -12,14 +12,15 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 # Explanation
 
 <p float="left">
-<img src="/readMe/1.png" width="200" />
-<img src="/readMe/2.png" width="200" />
-<img src="/readMe/3.png" width="200" />
-<img src="/readMe/4.png" width="200" />
-<img src="/readMe/5.png" width="200" />
-<img src="/readMe/6.png" width="200" />
-<img src="/readMe/7.png" width="200" />
-<img src="/readMe/8.png" width="200" />
+<img src="/readMe/1.png" width="250" />
+<img src="/readMe/2.png" width="250" />
+<img src="/readMe/3.png" width="250" />
+<img src="/readMe/4.png" width="250" />
+<img src="/readMe/5.png" width="250" />
+<img src="/readMe/6.png" width="250" />
+<img src="/readMe/7.png" width="250" />
+<img src="/readMe/8.png" width="250" />
+<img src="/readMe/9.png" width="250" />
 </p>
 
 The double-sized starting tiles are split, but marked with a black square that contains a number at the top corner.

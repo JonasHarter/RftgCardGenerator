@@ -11,7 +11,7 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 
 # Explanation
 
-![card_image_1](/readMe/1.png?raw=true)
+<img src="/readMe/1.png" width="200" />
 ![card_image_2](/readMe/2.png?raw=true)
 ![card_image_3](/readMe/3.png?raw=true)
 ![card_image_4](/readMe/4.png?raw=true)

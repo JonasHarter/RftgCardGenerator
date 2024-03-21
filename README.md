@@ -11,13 +11,13 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 
 # Explanation
 
-![card_image_1(readMe/1.png?raw=true)
-![card_image_2(readMe/2.png?raw=true)
-![card_image_3(readMe/3.png?raw=true)
-![card_image_4(readMe/4.png?raw=true)
-![card_image_5(readMe/5.png?raw=true)
-![card_image_6(readMe/6.png?raw=true)
-![card_image_7(readMe/7.png?raw=true)
+![card_image_1(/readMe/1.png?raw=true)
+![card_image_2(/readMe/2.png?raw=true)
+![card_image_3(/readMe/3.png?raw=true)
+![card_image_4(/readMe/4.png?raw=true)
+![card_image_5(/readMe/5.png?raw=true)
+![card_image_6(/readMe/6.png?raw=true)
+![card_image_7(/readMe/7.png?raw=true)
 
 The double-sized starting tiles are split, but marked with a black square that contains a number at the top corner.
 Pairs with identical numbers form a starting tile. 

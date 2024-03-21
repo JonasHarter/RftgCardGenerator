@@ -12,12 +12,12 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 # Explanation
 
 <img src="/readMe/1.png" width="200" />
-![card_image_2](/readMe/2.png?raw=true)
-![card_image_3](/readMe/3.png?raw=true)
-![card_image_4](/readMe/4.png?raw=true)
-![card_image_5](/readMe/5.png?raw=true)
-![card_image_6](/readMe/6.png?raw=true)
-![card_image_7](/readMe/7.png?raw=true)
+<img src="/readMe/2.png" width="200" />
+<img src="/readMe/3.png" width="200" />
+<img src="/readMe/4.png" width="200" />
+<img src="/readMe/5.png" width="200" />
+<img src="/readMe/6.png" width="200" />
+<img src="/readMe/7.png" width="200" />
 
 The double-sized starting tiles are split, but marked with a black square that contains a number at the top corner.
 Pairs with identical numbers form a starting tile. 

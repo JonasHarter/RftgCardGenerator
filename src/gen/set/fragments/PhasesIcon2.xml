@@ -1,7 +1,8 @@
 <g
 	xmlns="http://www.w3.org/2000/svg">
 	<g
-		transform="translate(2.296139,27.963784)">> <rect
+		transform="translate(2.296139,27.963784) scale(0.25,0.25)">
+		<rect
 			style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
 			width="20"
 			height="20"

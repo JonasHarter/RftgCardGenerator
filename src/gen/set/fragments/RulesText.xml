@@ -1,12 +1,12 @@
 <flowRoot
 	xmlns="http://www.w3.org/2000/svg"
-    style="font-size:9pt;fill:#000000;fill-opacity:1;text-align:center;stroke:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DM Serif Text';-inkscape-font-specification:'DM Serif Text'">
+    style="font-size:2.5pt;fill:#000000;fill-opacity:1;text-align:center;stroke:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DM Serif Text';-inkscape-font-specification:'DM Serif Text'">
     <flowRegion>
 		<rect
-		    width="240"
-		    height="90"
+		    width="60"
+		    height="22"
 		    x="5"
-		    y="264.5" />
+		    y="68" />
 	</flowRegion>
   	<flowPara
   		id="1">

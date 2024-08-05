@@ -53,19 +53,14 @@ public class PrintGenerator {
 		// Generate file
 		Node rootNode = (Node) document.getDocumentElement();
 		Node bodyNode = rootNode.getChildNodes().item(3);
-		int imageCounter = 0;
 		for (File file : imageFiles) {
 			Element imgElement = document.createElement("img");
 			imgElement.setAttribute("src", "./" + file.getName().toString());
 			bodyNode.appendChild(imgElement);
 			bodyNode.appendChild(document.createTextNode(System.getProperty("line.separator")));
-			imageCounter++;
-			if(imageCounter % 9 == 0)
-			{
-				Element divElement = document.createElement("div");
-				divElement.setAttribute("class", "pagebreak");
-				bodyNode.appendChild(divElement);
-			}
+			Element divElement = document.createElement("div");
+			divElement.setAttribute("class", "pagebreak");
+			bodyNode.appendChild(divElement);
 		}
 		// Write
 		try {

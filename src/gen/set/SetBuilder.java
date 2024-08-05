@@ -153,7 +153,7 @@ public class SetBuilder {
 			parentNode.appendChild(digitNode);
 			if (face.getTextSp() != null)
 				parentNode.appendChild(loadFragment("CostPlus.xml"));
-			// Phases
+//			// Phases
 			if (face.getPhase() != null) {
 				for (int phaseI = 0; phaseI < face.getPhase().size(); phaseI++) {
 					Phase phase = face.getPhase().get(phaseI);
@@ -198,7 +198,7 @@ public class SetBuilder {
 			if (isStartingTile || isStartingPlanet) {
 				Node idFragment = loadFragment("Id.xml");
 				if(!isSecondFace)
-					idFragment = transformTranslateFragment(idFragment, 222, 0);
+					idFragment = transformTranslateFragment(idFragment, 50, 0);
 				String idString = "";
 				if (isStartingTile)
 					idString = doubleTileId.toString();
@@ -219,7 +219,10 @@ public class SetBuilder {
 			bottomIdFragment.getChildNodes().item(1).getChildNodes().item(3).setTextContent(bottomIdBuilder.toString());
 			parentNode.appendChild(bottomIdFragment);
 			// Border
-			parentNode.appendChild(loadFragment("Border.xml"));
+			Node borderBleedNode = loadFragment("BorderBleed.xml");
+			Node borderSafeNode = loadFragment("Border.xml");
+			parentNode.appendChild(borderBleedNode);
+			parentNode.appendChild(borderSafeNode);
 			return document;
 		}
 

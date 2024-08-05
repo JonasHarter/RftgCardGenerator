@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<svg:svg  baseProfile="full" width="250mm" height="353mm" viewBox="0 0 250 353"
+<!-- 
+    63x88
+    Bleed and margin should be 3.175(1/8"), I'm just using 3'
+-->
+<svg:svg  baseProfile="full" width="69mm" height="94mm" viewBox="0 0 69 94"
    	version="1.2"
    	xmlns="http://www.w3.org/2000/svg"
 	xmlns:svg="http://www.w3.org/2000/svg" 
-	transform="scale(0.25,0.25)">
+	transform="">
 	<g 
-		transform="scale(1.0,1.0)"
+		transform=""
 		id="body">
 	</g>
 </svg:svg>

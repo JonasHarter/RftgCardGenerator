@@ -1,7 +1,7 @@
 <g
 	xmlns="http://www.w3.org/2000/svg">
 	<g 
-		transform="translate(40,20)">
+		transform="translate(10,5) scale(0.25,0.25)">
 	<circle
 		style="fill:none;stroke:#ffffff;stroke-width:2.5;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
 	    cx="180"

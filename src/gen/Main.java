@@ -30,7 +30,7 @@ public class Main {
 		System.out.println("Generating print file");
 		PrintGenerator print = new PrintGenerator(targetPath);
 		print.buildPrintFile();
-
+		
 		System.out.println();
 		System.out.println("Done");
 	}

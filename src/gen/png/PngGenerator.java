@@ -16,7 +16,10 @@ import org.apache.commons.io.FilenameUtils;
 public class PngGenerator {
 
 	private static Path INKSCAPE_PATH = Paths.get("C:\\Program Files\\Inkscape\\bin\\inkscape.exe");
-	private static String COMMAND = "--export-type=\"png\"";
+	private static String COMMAND_PNG = "--export-type=\"png\"";
+	//private static String COMMAND_DPI = "--export-dpi=300";
+	private static String COMMAND_WIDTH = "--export-width=3276";
+	private static String COMMAND_HEIGHT = "--export-height=4456";
 	private Path targetPath;
 
 	public PngGenerator(Path targetPath) {
@@ -54,19 +57,20 @@ public class PngGenerator {
 			executor.shutdown();
 			executor.awaitTermination(10, TimeUnit.MINUTES);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block 
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
 	private void runProcess(File file) throws PngGeneratorException {
-		ProcessBuilder processBuilder = new ProcessBuilder(INKSCAPE_PATH.toString(), COMMAND, "\"" + file.getAbsolutePath().toString() + "\"");
+		ProcessBuilder processBuilder = new ProcessBuilder(INKSCAPE_PATH.toString(), COMMAND_PNG,
+				COMMAND_WIDTH, COMMAND_HEIGHT, "\"" + file.getAbsolutePath().toString() + "\"");
 		processBuilder.inheritIO();
 		Process process;
 		try {
 			process = processBuilder.start();
 			int exit = process.waitFor();
-			if(exit != 0)
+			if (exit != 0)
 				throw new PngGeneratorException("Process exited with " + exit);
 		} catch (IOException e) {
 			throw new PngGeneratorException("Failed to run process", e);

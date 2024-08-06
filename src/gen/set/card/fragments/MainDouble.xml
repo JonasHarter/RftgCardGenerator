@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- 
-    63x88
-    Bleed and margin should be 3.175(1/8"), I'm just using 3'
+    89 x 127
+    +3 bleed
 -->
-<svg:svg  baseProfile="full" width="69mm" height="94mm" viewBox="0 0 69 94"
+<svg:svg  baseProfile="full" width="133mm" height="95mm" viewBox="0 0 133 95"
    	version="1.2"
    	xmlns="http://www.w3.org/2000/svg"
 	xmlns:svg="http://www.w3.org/2000/svg" 

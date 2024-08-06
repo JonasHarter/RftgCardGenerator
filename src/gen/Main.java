@@ -14,22 +14,17 @@ public class Main {
 		Path currentPath = Paths.get(System.getProperty("user.dir"));
 		Path imagePath = currentPath.resolve("img");
 		Path targetPath = currentPath.resolve("build");
-		Integer runningInteger = new SetBuilder(SetLoader.loadSet("base"), null, targetPath, imagePath).buildFaces();
-		runningInteger = new SetBuilder(SetLoader.loadSet("Ambition"), runningInteger, targetPath, imagePath)
-				.buildFaces();
-		runningInteger = new SetBuilder(SetLoader.loadSet("Rivalry"), runningInteger, targetPath, imagePath)
-				.buildFaces();
-		runningInteger = new SetBuilder(SetLoader.loadSet("Promo"), runningInteger, targetPath, imagePath).buildFaces();
-
-		System.out.println();
-		System.out.println("Converting");
-		PngGenerator convert = new PngGenerator(targetPath);
-		convert.convertFiles();
+		new SetBuilder(SetLoader.loadSet("base"), targetPath, imagePath).build();
+//		new SetBuilder(SetLoader.loadSet("Ambition"), runningInteger, targetPath, imagePath)
+//				.buildFaces();
+//		new SetBuilder(SetLoader.loadSet("Rivalry"), runningInteger, targetPath, imagePath)
+//				.buildFaces();
+//		new SetBuilder(SetLoader.loadSet("Promo"), runningInteger, targetPath, imagePath).buildFaces();
 		
-		System.out.println();
-		System.out.println("Generating print file");
-		PrintGenerator print = new PrintGenerator(targetPath);
-		print.buildPrintFile();
+//		System.out.println();
+//		System.out.println("Generating print file");
+//		PrintGenerator print = new PrintGenerator(targetPath);
+//		print.buildPrintFile();
 		
 		System.out.println();
 		System.out.println("Done");

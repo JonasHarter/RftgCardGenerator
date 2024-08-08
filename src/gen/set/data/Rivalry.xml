@@ -187,7 +187,7 @@
 			<nameOverwrite>Besiedeltes Grenzland</nameOverwrite>
 			<cost>0</cost>
 			<color>grey</color>
-			<imageOffset>40</imageOffset>
+			<imageOffset>10</imageOffset>
 			<text>Lege 1 Militär-Würfel in deine Bevölkerung und 1 Pionier-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -295,7 +295,7 @@
 			<nameOverwrite>Magmaozean</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
-			<imageOffset>10</imageOffset>
+			<imageOffset>3</imageOffset>
 			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -311,7 +311,7 @@
 			<nameOverwrite>Zerstörte Dysonsphäre</nameOverwrite>
 			<cost>4</cost>
 			<color>yellow</color>
-			<imageOffset>10</imageOffset>
+			<imageOffset>3</imageOffset>
 			<text>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
 		</face>
 	</card>
@@ -320,7 +320,7 @@
 			<name>Kolonieschiff</name>
 			<cost>2</cost>
 			<phase>3</phase>
-			<imageOffset>20</imageOffset>
+			<imageOffset>5</imageOffset>
 			<text>Mische diese Karte zurück in das Deck und lege die oberste Welt in deiner Konstruktionszone, sofern es keine AlienTechnologie-Welt ist, in deine Auslage.</text>
 		</face>
 		<face>
@@ -328,7 +328,7 @@
 			<nameOverwrite>Kosmologisches Kuriositätenkabinett</nameOverwrite>
 			<cost>5</cost>
 			<color>yellow</color>
-			<imageOffset>20</imageOffset>
+			<imageOffset>5</imageOffset>
 			<text>Lege 1 AlienTechnologie-Würfel in deine Bevölkerung.</text>
 			<textSp>Erhalte 2⬡ für jede AlienTechnologie-Welt.</textSp>
 		</face>
@@ -346,7 +346,7 @@
 			<nameOverwrite>Schnelllebige Gesellschaft</nameOverwrite>
 			<cost>6</cost>
 			<color>grey</color>
-			<imageOffset>22</imageOffset>
+			<imageOffset>6</imageOffset>
 			<text>Lege 1 Gründer- und 1 Konsum-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -412,7 +412,7 @@
 			<nameOverwrite>Loyaler Warlord</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Anführer-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
@@ -428,7 +428,7 @@
 			<name>Geheimnisvoller Monolith</name>
 			<cost>5</cost>
 			<color>grey</color>
-			<imageOffset>10</imageOffset>
+			<imageOffset>3</imageOffset>
 			<textSp>Erhalte 3⬡.</textSp>
 		</face>
 	</card>

@@ -339,7 +339,7 @@
 			<nameOverwrite>Alpha-Mutant</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -355,7 +355,7 @@
 			<nameOverwrite>Interplanetare Trendsetter</nameOverwrite>
 			<cost>6</cost>
 			<color>grey</color>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Erhalte 2$. Lege 2 Konsum-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
@@ -395,7 +395,7 @@
 			<nameOverwrite>Risikoinvestoren</nameOverwrite>
 			<cost>4</cost>
 			<phase>2</phase>
-			<imageOffset>40</imageOffset>
+			<imageOffset>10</imageOffset>
 			<text>Reduziere die Kosten aller Entwicklungen um 1 (mindestens 1).</text>
 		</face>
 		<face>
@@ -440,7 +440,7 @@
 			<nameOverwrite>Gesellschaftliche Infiltration</nameOverwrite>
 			<cost>3</cost>
 			<phase>3</phase>
-			<imageOffset>15</imageOffset>
+			<imageOffset>4</imageOffset>
 			<text>Reduziere die Kosten aller Gen- und AlienTechnologie-Welten um 1.</text>
 		</face>
 		<face>
@@ -646,7 +646,7 @@
 			<name>Propagandakampagne</name>
 			<cost>4</cost>
 			<phase>0</phase>
-			<imageOffset>40</imageOffset>
+			<imageOffset>10</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter in deine gewählte Phase versetzen.</text>
 		</face>
 		<face>
@@ -835,7 +835,7 @@
 			<nameOverwrite>Interkultureller Salon</nameOverwrite>
 			<cost>4</cost>
 			<phase>5</phase>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Erhalte 1⬡ am Ende der Phase.</text>
 		</face>
 		<face>
@@ -843,7 +843,7 @@
 			<nameOverwrite>Roboter Revolution</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -869,7 +869,7 @@
 			<nameOverwrite>Söldner</nameOverwrite>
 			<cost>1</cost>
 			<phase>0</phase>
-			<imageOffset>30</imageOffset>
+			<imageOffset>8</imageOffset>
 			<text>Du kannst 1 Militär- oder SelteneElemente-Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -947,7 +947,7 @@
 			<nameOverwrite>Artefaktjäger</nameOverwrite>
 			<cost>3</cost>
 			<phase>1</phase>
-			<imageOffset>20</imageOffset>
+			<imageOffset>5</imageOffset>
 			<text>Ziehe am Ende der Phase eine Karte. Erhalte 1$ wenn mindestens 1 AlienTechnologie-Kundschafter aufgeklärt hat.</text>
 		</face>
 		<face>
@@ -978,7 +978,7 @@
 			<name>Nanotechnologie</name>
 			<cost>5</cost>
 			<phase>0</phase>
-			<imageOffset>15</imageOffset>
+			<imageOffset>4</imageOffset>
 			<text>Du kannst bis zu 2 Arbeiter versetzen.</text>
 		</face>
 		<face>
@@ -1000,7 +1000,7 @@
 			<nameOverwrite>Gesetzloses Grenzland</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
-			<imageOffset>25</imageOffset>
+			<imageOffset>6</imageOffset>
 			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>

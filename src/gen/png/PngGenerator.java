@@ -13,20 +13,18 @@ public class PngGenerator implements AutoCloseable {
 	private static Path INKSCAPE_PATH = Paths.get("C:\\Program Files\\Inkscape\\bin\\inkscape.exe");
 	private static String COMMAND_PNG = "--export-type=\"png\"";
 	private static String COMMAND_FILENAME = "--export-filename=";
-	private static String COMMAND_WIDTH_SINGLE = "--export-width=3276";
-	private static String COMMAND_WIDTH_DOUBLE = "--export-width=6562";
-	private static String COMMAND_HEIGHT = "--export-height=4456";
+	private static String COMMAND_DPI = "--export-dpi=1200";
 	// Dont use too much threads
 	private ExecutorService executor = Executors.newFixedThreadPool(4);
 
-	public void convertFile(File file, Boolean doubleWidth) throws PngGeneratorException {
-		runProcess(file, doubleWidth ? COMMAND_WIDTH_DOUBLE : COMMAND_WIDTH_SINGLE);
+	public void convertFile(File file) throws PngGeneratorException {
+		runProcess(file);
 	}
 
-	public void convertFileAsync(File file, Boolean doubleWidth) {
+	public void convertFileAsync(File file) {
 		executor.submit(() -> {
 			try {
-				runProcess(file, doubleWidth ? COMMAND_WIDTH_DOUBLE : COMMAND_WIDTH_SINGLE);
+				runProcess(file);
 			} catch (Exception e) {
 				System.out.println("Failed for file: " + file.getName());
 				e.printStackTrace();
@@ -45,11 +43,11 @@ public class PngGenerator implements AutoCloseable {
 		}
 	}
 
-	private static void runProcess(File file, String widthCommand) throws PngGeneratorException {
+	private static void runProcess(File file) throws PngGeneratorException {
 		String filePath = file.getAbsolutePath().toString();
 		String newFilePath = COMMAND_FILENAME + filePath.replace("svg", "png");
-		ProcessBuilder processBuilder = new ProcessBuilder(INKSCAPE_PATH.toString(), COMMAND_PNG, widthCommand,
-				COMMAND_HEIGHT, newFilePath, "\"" + file.getAbsolutePath().toString() + "\"");
+		ProcessBuilder processBuilder = new ProcessBuilder(INKSCAPE_PATH.toString(), COMMAND_PNG, COMMAND_DPI,
+				newFilePath, "\"" + file.getAbsolutePath().toString() + "\"");
 		processBuilder.inheritIO();
 		Process process;
 		try {

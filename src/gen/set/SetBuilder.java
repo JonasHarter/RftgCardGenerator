@@ -72,7 +72,7 @@ public class SetBuilder {
 			for (Tuple<Document, CardData> tuple : cardList) {
 				Path filePath = outputFolder.resolve(tuple.y().generateIdString() + ".svg");
 				SvgBuilder.writeToFolder(tuple.x(), filePath);
-				pngGenerator.convertFileAsync(filePath.toFile(), tuple.y().isDoubleSized());
+				pngGenerator.convertFileAsync(filePath.toFile());
 			}
 		}
 		return;
@@ -96,11 +96,6 @@ public class SetBuilder {
 				return set + "-" + id;
 			return set + "-" + id + "-" + side;
 		}
-
-		public Boolean isDoubleSized() {
-			return isDoubleSized;
-		}
-
 	}
 
 	public static class SetBuilderException extends Exception {

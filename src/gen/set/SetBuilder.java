@@ -18,6 +18,7 @@ import gen.set.definitions.CardType;
 import gen.set.definitions.Face;
 import gen.set.definitions.Set;
 import gen.util.SvgBuilder;
+import gen.util.Tuple;
 
 public class SetBuilder {
 
@@ -32,45 +33,74 @@ public class SetBuilder {
 	}
 
 	public void build() throws Exception {
-//		List<FileGeneratorData> finalData = new ArrayList<>();
-//		FileGeneratorData fileGeneratorData = new FileGeneratorData(outputFolder, imageFolder);
 		Integer cardId = 1;
+		List<Tuple<Document, CardData>> cardList = new ArrayList<Tuple<Document, CardData>>();
+		for (Card card : set.getCards()) {
+			List<Tuple<Document, CardData>> innerFacesList = new ArrayList<>();
+			String cardSide = "A";
+			for (Face face : card.getFaces()) {
+				Boolean isStartingPlanet = card.getFaces().size() == 1;
+				CardData cardData = new CardData(set.getLetter(), cardId.toString(), cardSide);
+				cardData.isSingleSided = isStartingPlanet;
+				InnerFaceBuilder innerFaceBuilder = new InnerFaceBuilder(face, isStartingPlanet,
+						cardData.generateIdString(), imageFolder);
+				Document innerFace = innerFaceBuilder.build();
+				innerFacesList.add(new Tuple<>(innerFace, cardData));
+				cardSide = "B";
+			}
+			if (CardType.STARTER_DOUBLE.equals(card.getCardType())) {
+				DoubleFaceCardBuilder doubleCardBuilder = new DoubleFaceCardBuilder(innerFacesList.get(0).x(),
+						innerFacesList.get(1).x());
+				Document doubleCard = doubleCardBuilder.build();
+				DoubleFaceCardBorderBuilder doubleCardBorderBuilder = new DoubleFaceCardBorderBuilder(doubleCard);
+				Document doubleCardBordered = doubleCardBorderBuilder.build();
+				DoubleCardBleedBuilder doubleCardBleedBuilder = new DoubleCardBleedBuilder(doubleCardBordered);
+				CardData cardData = innerFacesList.get(0).y();
+				cardData.isDoubleSized = true;
+				cardList.add(new Tuple<>(doubleCardBleedBuilder.build(), innerFacesList.get(0).y()));
+			} else {
+				for (Tuple<Document, CardData> tuple : innerFacesList) {
+					InnerFaceBorderBuilder innerFaceBorderedBuilder = new InnerFaceBorderBuilder(tuple.x());
+					Document innerFaceBordered = innerFaceBorderedBuilder.build();
+					SingleCardBleedBuilder singleCardBleedBuilder = new SingleCardBleedBuilder(innerFaceBordered);
+					cardList.add(new Tuple<>(singleCardBleedBuilder.build(), tuple.y()));
+				}
+			}
+			cardId++;
+		}
 		try (PngGenerator pngGenerator = new PngGenerator()) {
-			for (Card card : set.getCards()) {
-				List<Document> innerFacesList = new ArrayList<>();
-				for (Face face : card.getFaces()) {
-					InnerFaceBuilder innerFaceBuilder = new InnerFaceBuilder(face);
-					Document innerFace = innerFaceBuilder.build();
-					innerFacesList.add(innerFace);
-				}
-				List<Document> finalDocumentList = new ArrayList<>();
-				Boolean doubleSized = false;
-				if (CardType.STARTER_DOUBLE.equals(card.getCardType())) {
-					doubleSized = true;
-					DoubleFaceCardBuilder doubleCardBuilder = new DoubleFaceCardBuilder(innerFacesList.get(0),
-							innerFacesList.get(1));
-					Document doubleCard = doubleCardBuilder.build();
-					DoubleFaceCardBorderBuilder doubleCardBorderBuilder = new DoubleFaceCardBorderBuilder(doubleCard);
-					Document doubleCardBordered = doubleCardBorderBuilder.build();
-					DoubleCardBleedBuilder doubleCardBleedBuilder = new DoubleCardBleedBuilder(doubleCardBordered);
-					finalDocumentList.add(doubleCardBleedBuilder.build());
-				} else {
-					for (Document innerFaceDocument : innerFacesList) {
-						InnerFaceBorderBuilder innerFaceBorderedBuilder = new InnerFaceBorderBuilder(innerFaceDocument);
-						Document innerFaceBordered = innerFaceBorderedBuilder.build();
-						SingleCardBleedBuilder singleCardBleedBuilder = new SingleCardBleedBuilder(innerFaceBordered);
-						finalDocumentList.add(singleCardBleedBuilder.build());
-					}
-				}
-				for (Document finalDocument : finalDocumentList) {
-					Path filePath = outputFolder.resolve(cardId + ".svg");
-					SvgBuilder.writeToFolder(finalDocument, filePath);
-					pngGenerator.convertFileAsync(filePath.toFile(), doubleSized);
-					cardId++;
-				}
+			for (Tuple<Document, CardData> tuple : cardList) {
+				Path filePath = outputFolder.resolve(tuple.y().generateIdString() + ".svg");
+				SvgBuilder.writeToFolder(tuple.x(), filePath);
+				pngGenerator.convertFileAsync(filePath.toFile(), tuple.y().isDoubleSized());
 			}
 		}
 		return;
+	}
+
+	private class CardData {
+		private String set;
+		private String id;
+		private String side;
+		private Boolean isDoubleSized = false;
+		private Boolean isSingleSided = false;
+
+		private CardData(String set, String id, String side) {
+			this.set = set;
+			this.id = id;
+			this.side = side;
+		}
+
+		public String generateIdString() {
+			if (isDoubleSized || isSingleSided)
+				return set + "-" + id;
+			return set + "-" + id + "-" + side;
+		}
+
+		public Boolean isDoubleSized() {
+			return isDoubleSized;
+		}
+
 	}
 
 	public static class SetBuilderException extends Exception {

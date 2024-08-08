@@ -57,6 +57,7 @@ public class PngGenerator implements AutoCloseable {
 			int exit = process.waitFor();
 			if (exit != 0)
 				throw new PngGeneratorException("Process exited with " + exit);
+			System.out.println(file.getName());
 		} catch (IOException e) {
 			throw new PngGeneratorException("Failed to run process", e);
 		} catch (InterruptedException e) {

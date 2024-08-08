@@ -1,7 +1,6 @@
 package gen.builders.node;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 public class DoubleFaceCardBuilder extends NodeBuilder {
@@ -19,10 +18,7 @@ public class DoubleFaceCardBuilder extends NodeBuilder {
 		Node leftImportedNode = document.importNode(leftInnerFaceNode, true);
 		rootNode.appendChild(leftImportedNode);
 		Node rightImportedNode = document.importNode(rightInnerFaceNode, true);
-//		Element groupElement = document.createElement("g");
-//		groupElement.appendChild(rightImportedNode);
 		translateNode(rightImportedNode, 63, 0);
 		rootNode.appendChild(rightImportedNode);
 	}
-
 }

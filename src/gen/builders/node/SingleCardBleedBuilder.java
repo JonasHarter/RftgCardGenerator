@@ -4,6 +4,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
+/**
+ * Adds a 3mm border
+ */
 public class SingleCardBleedBuilder extends NodeBuilder {
 
 	private Node parameterNode;

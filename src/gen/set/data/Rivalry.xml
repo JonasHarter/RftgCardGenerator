@@ -116,7 +116,7 @@
 			<nameOverwrite>Subatomarer 3D-Druck</nameOverwrite>
 			<cost>2</cost>
 			<phase>5</phase>
-			<text>Tausche jedes Gut, das du von Oortsche Wolke Raffinerie verbraucht hast gegen einen nicht-Anführer-Würfel.</text>
+			<text>Tausche jedes Gut, das du von Oortsche Wolke Raffinerie verbraucht hast, gegen einen nicht-Anführer-Würfel.</text>
 		</face>
 		<face>
 			<name>Oort-Wolken Raffinierie</name>

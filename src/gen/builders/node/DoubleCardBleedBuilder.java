@@ -33,7 +33,7 @@ public class DoubleCardBleedBuilder extends NodeBuilder {
 		Element element = document.createElement("rect");
 		element.setAttribute("x", "0");
 		element.setAttribute("y", "0");
-		element.setAttribute("width", "95");
+		element.setAttribute("width", "133");
 		element.setAttribute("height", "3");
 		return element;
 	}
@@ -43,23 +43,23 @@ public class DoubleCardBleedBuilder extends NodeBuilder {
 		element.setAttribute("x", "0");
 		element.setAttribute("y", "0");
 		element.setAttribute("width", "3");
-		element.setAttribute("height", "94");
+		element.setAttribute("height", "95");
 		return element;
 	}
 
 	private Element createBorderRight() {
 		Element element = document.createElement("rect");
-		element.setAttribute("x", "92");
+		element.setAttribute("x", "130");
 		element.setAttribute("y", "0");
 		element.setAttribute("width", "3");
-		element.setAttribute("height", "133");
+		element.setAttribute("height", "95");
 		return element;
 	}
 
 	private Element createBorderBottom() {
 		Element element = document.createElement("rect");
 		element.setAttribute("x", "0");
-		element.setAttribute("y", "91");
+		element.setAttribute("y", "92");
 		element.setAttribute("width", "133");
 		element.setAttribute("height", "3");
 		return element;

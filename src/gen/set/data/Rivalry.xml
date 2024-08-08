@@ -29,7 +29,7 @@
 			<nameOverwrite>Traditionelle Gesellschaft</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel- und 1 Pionier-Würfel in deinen Becher.</text>
+			<text>Lege 1 Neuheiten- und 1 Pionier-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card cardType="double"> 
@@ -45,7 +45,7 @@
 			<nameOverwrite>Geschützer Transitkorridor</nameOverwrite>
 			<cost>4</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel- und 1 Konsum-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten- und 1 Konsum-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card cardType="double"> 
@@ -133,7 +133,7 @@
 			<nameOverwrite>Wildtier-Handelsposten</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 Luxusartikel- und 1 Pionier-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten- und 1 Pionier-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -206,7 +206,7 @@
 			<nameOverwrite>Weltraumaufzug</nameOverwrite>
 			<cost>0</cost>
 			<color>lightBlue</color>
-			<text>Lege 2 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 2 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -281,7 +281,7 @@
 			<nameOverwrite>Kaufhaus der inneren Spähre</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 Gründer- und 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Gründer- und 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -355,7 +355,7 @@
 			<name>Flexible Produktion</name>
 			<cost>1</cost>
 			<phase>0</phase>
-			<text>Du kannst 1 Luxusartikel- oder SelteneElemente-Arbeiter versetzen.</text>
+			<text>Du kannst 1 Neuheiten- oder SelteneElemente-Arbeiter versetzen.</text>
 		</face>
 		<face>
 			<name>Koalition der Genmanipulierten</name>

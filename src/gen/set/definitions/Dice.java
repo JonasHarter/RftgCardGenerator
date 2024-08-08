@@ -6,7 +6,7 @@ package gen.set.definitions;
 public enum Dice {
 
 	HOME("Heimat", Color.WHITE), MILITARY("Militär", Color.RED), CONSUME("Konsum", Color.VIOLETT),
-	RARE_EARTH("SelteneElemente", Color.BROWN), LUXURY("Luxusartikel", Color.LIGHT_BLUE), GEN("Gen", Color.GREEN),
+	RARE_EARTH("SelteneElemente", Color.BROWN), NOVELTY("Neuheiten", Color.LIGHT_BLUE), GEN("Gen", Color.GREEN),
 	ALIEN("AlienTechnologie", Color.YELLOW), LEADER("Anführer", Color.BLACK), FOUNDER("Gründer", Color.ORANGE),
 	PIONEER("Pionier", Color.DARK_BLUE);
 

@@ -34,13 +34,13 @@
 			<name>Absatzmärkte</name>
 			<cost>3</cost>
 			<phase>4</phase>
-			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf deinen Luxusartikel-Welten.</text>
+			<text>Erhalte 1$ am Ende der Phase für jedes Gut auf deinen Neuheiten-Welten.</text>
 		</face>
 		<face>
 			<name>Orbitales Einkaufszentrum</name>
 			<cost>0</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 neuen Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Lege 1 neuen Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card cardType="double"> 
@@ -93,14 +93,14 @@
 			<nameOverwrite>Universalreligion</nameOverwrite>
 			<cost>2</cost>
 			<phase>2</phase>
-			<text>Erhalte 1$ am Ende der Phase für jeden Luxusartikel-Würfel in deiner Bevölkerung.</text>
+			<text>Erhalte 1$ am Ende der Phase für jeden Neuheiten-Würfel in deiner Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Pilgerwelt</name>
 			<nameOverwrite>Pilgerstätte</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card cardType="double"> 
@@ -147,7 +147,7 @@
 			<nameOverwrite>Vergessene Kolonie</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card> 
@@ -188,7 +188,7 @@
 			<name>Epsilon Eridani</name>
 			<cost>2</cost>
 			<color>grey</color>
-			<text>Lege 1 Luxusartikel- und 1 Militär-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten- und 1 Militär-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -221,7 +221,7 @@
 			<cost>4</cost>
 			<phase>5</phase>
 			<text>Erhalte 1$ am Ende der Phase.</text>
-			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Luxusartikel-Welten.</textSp>
+			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Neuheiten-Welten.</textSp>
 		</face>
 	</card>
 	<card> 
@@ -244,7 +244,7 @@
 			<name>Neue Aussteiger</name>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 		<face>
 			<name>Bergbau Liga</name>
@@ -281,7 +281,7 @@
 			<name>Raumhafen</name>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Lege 1 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -308,7 +308,7 @@
 			<name>Blühende Welt</name>
 			<cost>3</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card> 
@@ -379,7 +379,7 @@
 			<name>Verrückte Wissenschafter</name>
 			<cost>3</cost>
 			<phase>0</phase>
-			<text>Wenn du die meisten Luxusartikel-Welten besitzt, kannst du bis zu 2 Arbeiter versetzen. Bei Gleichstand 1 Arbeiter.</text>
+			<text>Wenn du die meisten Neuheiten-Welten besitzt, kannst du bis zu 2 Arbeiter versetzen. Bei Gleichstand 1 Arbeiter.</text>
 		</face>
 		<face>
 			<name>Tor-Station</name>
@@ -403,7 +403,7 @@
 			<nameOverwrite>Galactozon Firmensitz</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -417,7 +417,7 @@
 			<nameOverwrite>Kristalliner Zwergplanet</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Lege 1 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -448,7 +448,7 @@
 			<nameOverwrite>Informationsverdichteter Knotenpunkt</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card> 
@@ -473,7 +473,7 @@
 			<name>Gilde der Hydoponiker</name>
 			<cost>1</cost>
 			<phase>0</phase>
-			<text>Du kannst 1 Luxusartikel- oder Gen-Arbeiter versetzen.</text>
+			<text>Du kannst 1 Neuheiten- oder Gen-Arbeiter versetzen.</text>
 		</face>
 		<face>
 			<name>Alienwächter</name>
@@ -496,7 +496,7 @@
 			<nameOverwrite>Neu Vinland</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Lege 1 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -527,7 +527,7 @@
 			<nameOverwrite>Wüstenplanet</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Lege 1 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -606,7 +606,7 @@
 			<nameOverwrite>Raumwal-Schule</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card> 
@@ -684,7 +684,7 @@
 			<name>Galaktisches Resort</name>
 			<cost>3</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card> 
@@ -716,7 +716,7 @@
 			<nameOverwrite>Raumnomaden Konvoi</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -732,7 +732,7 @@
 			<nameOverwrite>Abgeschiedene Siedlung</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -787,7 +787,7 @@
 			<nameOverwrite>Sektorweite Nachfrage</nameOverwrite>
 			<cost>2</cost>
 			<phase>5</phase>
-			<text>Erhalte 2$ für jedes Gut, das du von einer Luxusartikel-Welt handelst.</text>
+			<text>Erhalte 2$ für jedes Gut, das du von einer Neuheiten-Welt handelst.</text>
 		</face>
 		<face>
 			<name>Verwaister Alien Vorposten</name>
@@ -810,7 +810,7 @@
 			<nameOverwrite>Künstlerkommune</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -1041,7 +1041,7 @@
 			<name>Datenanalyst</name>
 			<nameOverwrite>Datengestützte Bedarfsanalyse</nameOverwrite>
 			<cost>4</cost>
-			<text>Enferne 1 Würfel. Lege 2 Luxusartikel-Würfel in deinen Becher.</text>
+			<text>Enferne 1 Würfel. Lege 2 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Piratenwelt</name>

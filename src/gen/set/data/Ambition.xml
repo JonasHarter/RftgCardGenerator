@@ -127,7 +127,7 @@
 			<nameOverwrite>Pioniere in der Sternenkluft</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
-			<text>Lege 1 Luxusartikel-Würfel auf diese Welt.</text>
+			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
 		</face>
 	</card>
 	<card cardType="double">
@@ -257,7 +257,7 @@
 			<nameOverwrite>Raumnomaden der äußeren Sphäre</nameOverwrite>
 			<cost>1</cost>
 			<color>grey</color>
-			<text>Lege 1 Gründer- und 1 Luxusartikel-Würfel in deine Bevölkerung.</text>
+			<text>Lege 1 Gründer- und 1 Neuheiten-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card>

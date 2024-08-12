@@ -6,7 +6,8 @@
 			<name>Reichhaltiges Spielernetzwerk</name>
 			<cost>1</cost>
 			<color>grey</color>
-			<text>Du startest mit +2$. Lege 1 Neuheiten-Würfel in deinen Becher.</text>
+			<text>Du startest mit +2$.</text>
+			<text2>Lege 1 Neuheiten-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<!-- Normal Tiles -->
@@ -16,7 +17,8 @@
 			<nameOverwrite>Brückenkopf-Kolonie</nameOverwrite>
 			<cost>4</cost>
 			<color>lightBlue</color>
-			<text>Du erhälst 2$. Lege 1 Neuheiten-Würfel auf diese Welt.</text>
+			<text>Du erhälst 2$.</text>
+			<text2>Lege 1 Neuheiten-Würfel auf diese Welt.</text2>
 		</face>
 		<face>
 			<name>Vielseitige Wirtschaft</name>

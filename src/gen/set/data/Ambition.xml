@@ -25,7 +25,7 @@
 		</face>
 		<face>
 			<name>Galaktischer Bazaar</name>
-			<nameOverwrite>Basar der äußeren Sphäre</nameOverwrite>
+			<nameOverwrite>Raumnomaden der äußeren Sphäre</nameOverwrite>
 			<cost>1</cost>
 			<symbol>circle</symbol>
 			<colour>lightBlue</colour>
@@ -124,7 +124,7 @@
 		</face>
 		<face>
 			<name>Pioniere im "Starry Rift"</name>
-			<nameOverwrite>Pioniere in der Sternenkluft</nameOverwrite>
+			<nameOverwrite>Zentrum der Sternenkluft</nameOverwrite>
 			<cost>2</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
@@ -157,7 +157,8 @@
 			<nameOverwrite>Verbotene Zone</nameOverwrite>
 			<cost>2</cost>
 			<color>yellow</color>
-			<text>Du kannst Güter auf dieser Welt nicht handeln. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+			<text>Du kannst Güter auf dieser Welt nicht handeln.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card cardType="double">
@@ -212,7 +213,7 @@
 	<card cardType="double">
 		<face>
 			<name>Terraforming-Experten</name>
-			<nameOverwrite>Terraforming-Komitee</nameOverwrite>
+			<nameOverwrite>Finanzierungs-Komitee</nameOverwrite>
 			<cost>1</cost>
 			<phase>2 3</phase>
 			<text>Bevor du eine Karte fertigstellst, kannst 1$ ausgeben, um die Kosten um 1 zu reduzieren (mindestens 1).</text>
@@ -239,7 +240,8 @@
 			<nameOverwrite>Strafarbeiter-Kolonie</nameOverwrite>
 			<cost>0</cost>
 			<color>brown</color>
-			<text>Du startest mit +1$. Lege 1 Militär-Würfel in deinen Becher.</text>
+			<text>Du startest mit +1$.</text>
+			<text2>Lege 1 Militär-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
@@ -254,7 +256,7 @@
 	<card> 
 		<face>
 			<name>Weltraumnomaden</name>
-			<nameOverwrite>Raumnomaden der äußeren Sphäre</nameOverwrite>
+			<nameOverwrite>Basar der äußeren Sphäre</nameOverwrite>
 			<cost>1</cost>
 			<color>grey</color>
 			<text>Lege 1 Gründer- und 1 Neuheiten-Würfel in deine Bevölkerung.</text>
@@ -298,7 +300,7 @@
 		</face>
 		<face>
 			<name>Alien Sprengfalle</name>
-			<nameOverwrite>Archaische Sprengfalle</nameOverwrite>
+			<nameOverwrite>Archaisches Minenefeld</nameOverwrite>
 			<cost>1</cost>
 			<color>yellow</color>
 			<text>Entferne den Siedler, der diese Welt fertiggestellt hat.</text>
@@ -348,7 +350,8 @@
 			<nameOverwrite>Asteroidenfestung</nameOverwrite>
 			<cost>9</cost>
 			<color>grey</color>
-			<text>Die Kosten dieser Welt können nicht verändert werden. Lege 2 Militär-Würfel in deine Bevölkerung.</text>
+			<text>Die Kosten dieser Welt können nicht verändert werden.</text>
+			<text2>Lege 2 Militär-Würfel in deine Bevölkerung.</text2>
 			<textSp>Erhalte 4⬡.</textSp>
 		</face>
 	</card>

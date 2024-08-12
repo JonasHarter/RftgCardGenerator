@@ -35,6 +35,9 @@ public class Face {
 
 	@XmlElement(name = "text")
 	private String text;
+	
+	@XmlElement(name = "text2")
+	private String text2;
 
 	@XmlElement(name = "textSp")
 	private String textSp;
@@ -62,6 +65,10 @@ public class Face {
 
 	public String getText() {
 		return text;
+	}
+	
+	public String getText2() {
+		return text2;
 	}
 
 	public String getTextSp() {

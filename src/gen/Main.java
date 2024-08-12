@@ -16,6 +16,7 @@ public class Main {
 		new SetBuilder(SetLoader.loadSet("Ambition"), targetPath, imagePath).build();
 		new SetBuilder(SetLoader.loadSet("Rivalry"), targetPath, imagePath).build();
 		new SetBuilder(SetLoader.loadSet("Promo"), targetPath, imagePath).build();
+//		new SetBuilder(SetLoader.loadSet("Custom"), targetPath, imagePath).build();
 		
 //		System.out.println();
 //		System.out.println("Generating print file");

@@ -61,6 +61,7 @@
 	<card cardType="double"> 
 		<face>
 			<name>Zerstörte Kolonie</name>
+			<nameOverwrite>Abenteuerreiseagentur</nameOverwrite>
 			<cost>0</cost>
 			<text>Lege 1 Konsum-Würfel in deinen Becher.</text>
 		</face>
@@ -106,13 +107,13 @@
 	<card cardType="double"> 
 		<face>
 			<name>Verbesserte Aufklärung</name>
-			<nameOverwrite>Fernraum Observatorium</nameOverwrite>
+			<nameOverwrite>Fernraum-Aufklärung</nameOverwrite>
 			<cost>2</cost>
 			<phase>1</phase>
 			<text>Du kannst beim Aufklären neue Karten auch auf deine Stapel legen.</text>
 		</face>
 		<face>
-			<name>Wurmloch Station</name>
+			<name>Wurmloch-Station</name>
 			<cost>3</cost>
 			<color>brown</color>
 			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
@@ -120,13 +121,13 @@
 	</card>
 	<card cardType="double"> 
 		<face>
-			<name>Genlabor</name>
+			<name>Endling</name>
 			<cost>2</cost>
 			<phase>4</phase>
 			<text>Erhalte 2$ am Ende der Phase für jeden Gen-Würfel auf deinen Welten.</text>
 		</face>
 		<face>
-			<name>Die Letzen der Gnarssh</name>
+			<name>Genlabor</name>
 			<cost>0</cost>
 			<color>green</color>
 			<text>Lege 1 Gen-Würfel in deine Bevölkerung.</text>
@@ -212,15 +213,16 @@
 	<card> 
 		<face>
 			<name>Lebende Maschinen</name>
+			<nameOverwrite>Jäger-Operationsstützpunkt</nameOverwrite>
 			<cost>2</cost>
 			<color>grey</color>
 			<text>Lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Freihandelsunion</name>
-			<cost>4</cost>
+			<cost>6</cost>
 			<phase>5</phase>
-			<text>Erhalte 1$ am Ende der Phase.</text>
+			<text>Erhalte 2$ am Ende der Phase.</text>
 			<textSp>Erhalte ⌈X/2⌉⬡, mit X gleich der Summe der Kosten deiner Neuheiten-Welten.</textSp>
 		</face>
 	</card>
@@ -230,7 +232,8 @@
 			<nameOverwrite>Experimentelle Aufklärungsstation</nameOverwrite>
 			<cost>4</cost>
 			<color>yellow</color>
-			<text>Erhalte 1$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel in deinen Becher.</text2>
 		</face>
 		<face>
 			<name>Galaktisches Recycling</name>
@@ -264,9 +267,11 @@
 		</face>
 		<face>
 			<name>Ferne Welt</name>
+			<nameOverwrite>Wasserwelt</nameOverwrite>
 			<cost>4</cost>
 			<color>green</color>
-			<text>Erhalte 1$. Lege 1 Gen-Würfel in deinen Becher.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Gen-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
@@ -295,14 +300,16 @@
 			<name>Rüstungswelt</name>
 			<cost>4</cost>
 			<color>brown</color>
-			<text>Erhalte 1$. Lege 1 SelteneElemente-Würfel auf diese Welt.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 SelteneElemente-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card> 
 		<face>
 			<name>Raumtruppen</name>
 			<cost>3</cost>
-			<text>Enferne 1 Würfel. Erhalte 1$ und lege 1 Militär-Würfel auf deinen Becher.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Enferne 1 Würfel und lege 1 Militär-Würfel auf deinen Becher.</text2>
 		</face>
 		<face>
 			<name>Blühende Welt</name>
@@ -320,7 +327,7 @@
 		</face>
 		<face>
 			<name>Asteroidengürtel</name>
-			<nameOverwrite>Helium-3-Gewinnung</nameOverwrite>
+			<nameOverwrite>Helium-3 Lagerstätte</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
 			<text>Lege 1 SelteneElemente-Würfel in deinen Becher.</text>
@@ -329,17 +336,16 @@
 	<card> 
 		<face>
 			<name>Raumraffinerien</name>
-			<nameOverwrite>Orbitale Raffinerie</nameOverwrite>
+			<nameOverwrite>Orbitale Weiterverarbeitung</nameOverwrite>
 			<cost>3</cost>
 			<phase>5</phase>
 			<text>Erhalte 1⬡ für jedes Gut, das du von einer SelteneElemente-Welt verbrauchst.</text>
 		</face>
 		<face>
 			<name>Aufseher über Genmanipulierte</name>
-			<nameOverwrite>Alpha-Mutant</nameOverwrite>
+			<nameOverwrite>Unberührtes Ökosystem</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
-			<imageOffset>8</imageOffset>
 			<text>Lege 1 Gen-Würfel in deinen Becher.</text>
 		</face>
 	</card>
@@ -352,11 +358,11 @@
 		</face>
 		<face>
 			<name>Galaktische Trendsetter</name>
-			<nameOverwrite>Interplanetare Trendsetter</nameOverwrite>
+			<nameOverwrite>Galaktische Trendsetter Modenschau</nameOverwrite>
 			<cost>6</cost>
 			<color>grey</color>
-			<imageOffset>8</imageOffset>
-			<text>Erhalte 2$. Lege 2 Konsum-Würfel in deine Bevölkerung.</text>
+			<text>Erhalte 2$.</text>
+			<text>Lege 2 Konsum-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -410,7 +416,7 @@
 		<face>
 			<name>Wehrpflicht</name>
 			<cost>4</cost>
-			<text>Enferne 1 Würfel. Lege 2 Militär-Würfel in deinen Becher.</text>
+			<text>Enferne 1 Würfel und lege 2 Militär-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Kristallplanet</name>
@@ -462,10 +468,10 @@
 		</face>
 		<face>
 			<name>Rebellen Bergleute</name>
-			<nameOverwrite>Bergarbeiteraufstand</nameOverwrite>
+			<nameOverwrite>Räterepublik</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
-			<text>Enferne 1 Würfel. Lege 2 Militär-Würfel in deine Bevölkerung.</text>
+			<text>Enferne 1 Würfel und lege 2 Militär-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -480,7 +486,8 @@
 			<nameOverwrite>Antikes Verteidigungssystem</nameOverwrite>
 			<cost>6</cost>
 			<color>yellow</color>
-			<text>Erhalte 3$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+			<text>Erhalte 3$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
@@ -572,7 +579,7 @@
 		</face>
 		<face>
 			<name>Bösartige Lebensformen</name>
-			<nameOverwrite>Bösartiger Mondwurm</nameOverwrite>
+			<nameOverwrite>Kaiju-Reservat</nameOverwrite>
 			<cost>4</cost>
 			<color>green</color>
 			<text>Lege 1 Gen-Würfel auf diese Welt.</text>
@@ -591,7 +598,8 @@
 			<nameOverwrite>Xeno-Bibliothek</nameOverwrite>
 			<cost>6</cost>
 			<color>yellow</color>
-			<text>Erhalte 2$. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+			<text>Erhalte 2$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card> 
@@ -603,7 +611,7 @@
 		</face>
 		<face>
 			<name>Universalexporte</name>
-			<nameOverwrite>Raumwal-Schule</nameOverwrite>
+			<nameOverwrite>Oper der Sterne</nameOverwrite>
 			<cost>3</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Neuheiten-Würfel auf diese Welt.</text>
@@ -622,7 +630,8 @@
 			<nameOverwrite>Entrückte Kolonie</nameOverwrite>
 			<cost>5</cost>
 			<color>yellow</color>
-			<text>Erhalte 1$. Lege 1 AlienTechnologie-Würfel auf diese Welt.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card> 
@@ -670,12 +679,14 @@
 			<nameOverwrite>Großkampfschiff Wrack</nameOverwrite>
 			<cost>5</cost>
 			<color>yellow</color>
-			<text>Erhalte 2$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+			<text>Erhalte 2$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
 		<face>
 			<name>Freihandelszone</name>
+			<nameOverwrite>Freihandelsabkommen</nameOverwrite>
 			<cost>3</cost>
 			<phase>3</phase>
 			<text>Reduziere die Kosten aller farblosen Welten um 2 (mindestens 2).</text>
@@ -699,7 +710,8 @@
 			<nameOverwrite>Gensaat Arche</nameOverwrite>
 			<cost>5</cost>
 			<color>green</color>
-			<text>Erhalte 1$. Lege 1 Gen-Würfel auf diese Welt.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Gen-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card> 
@@ -713,7 +725,6 @@
 		</face>
 		<face>
 			<name>Raumnomaden Versteck</name>
-			<nameOverwrite>Raumnomaden Konvoi</nameOverwrite>
 			<cost>1</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Neuheiten-Würfel in deine Bevölkerung.</text>
@@ -747,7 +758,7 @@
 			<name>Ehemalige Strafkolonie</name>
 			<cost>1</cost>
 			<color>lightBlue</color>
-			<text>Enferne 1 Würfel. Lege 1 Militär-Würfel in deinen Becher.</text>
+			<text>Enferne 1 Würfel und lege 1 Militär-Würfel in deinen Becher.</text>
 		</face>
 	</card>
 	<card> 
@@ -840,7 +851,7 @@
 		</face>
 		<face>
 			<name>Amoklaufende Roboter</name>
-			<nameOverwrite>Roboter Revolution</nameOverwrite>
+			<nameOverwrite>Roboter-Freistaat</nameOverwrite>
 			<cost>2</cost>
 			<color>brown</color>
 			<imageOffset>8</imageOffset>
@@ -860,7 +871,8 @@
 			<nameOverwrite>WunschArten KG</nameOverwrite>
 			<cost>4</cost>
 			<color>green</color>
-			<text>Erhalte 1$. Lege 1 Gen-Würfel auf diese Welt.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Gen-Würfel auf diese Welt.</text2>
 		</face>
 	</card>
 	<card> 
@@ -877,7 +889,8 @@
 			<nameOverwrite>Unidentifizierte Flotte</nameOverwrite>
 			<cost>6</cost>
 			<color>yellow</color>
-			<text>Erhalte 3$. Lege 1 AlienTechnologie-Würfel in deinen Becher.</text>
+			<text>Erhalte 3$.</text>
+			<text2>Lege 1 AlienTechnologie-Würfel in deinen Becher.</text2>
 		</face>
 	</card> 
 	<card> 
@@ -908,7 +921,8 @@
 			<nameOverwrite>Symbionten GmbH</nameOverwrite>
 			<cost>4</cost>
 			<color>green</color>
-			<text>Erhalte 1$. Lege 1 Gen-Würfel in deinen Becher.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Gen-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
@@ -922,7 +936,8 @@
 			<name>Terraformte Welt</name>
 			<cost>5</cost>
 			<color>grey</color>
-			<text>Erhalte 2$. Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+			<text>Erhalte 2$.</text>
+			<text2>Lege 1 Konsum-Würfel in deine Bevölkerung.</text2>
 		</face>
 	</card>
 	<card> 
@@ -955,7 +970,7 @@
 			<nameOverwrite>Amphitheatrum Galaxicum</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
-			<text>Enferne 1 Würfel. Lege 1 Militär- und 1 Gen-Würfel in deine Bevölkerung.</text>
+			<text>Enferne 1 Würfel und lege 1 Militär- und 1 Gen-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>
 	<card> 
@@ -1017,7 +1032,8 @@
 			<nameOverwrite>Transportnexus</nameOverwrite>
 			<cost>4</cost>
 			<color>grey</color>
-			<text>Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Konsum-Würfel in deine Bevölkerung.</text2>
 		</face>
 	</card>
 	<card> 
@@ -1033,7 +1049,8 @@
 			<nameOverwrite>Globaler Freizeitpark</nameOverwrite>
 			<cost>4</cost>
 			<color>grey</color>
-			<text>Erhalte 1$. Lege 1 Konsum-Würfel in deine Bevölkerung.</text>
+			<text>Erhalte 1$.</text>
+			<text2>Lege 1 Konsum-Würfel in deine Bevölkerung.</text2>
 		</face>
 	</card>
 	<card> 
@@ -1041,7 +1058,7 @@
 			<name>Datenanalyst</name>
 			<nameOverwrite>Datengestützte Bedarfsanalyse</nameOverwrite>
 			<cost>4</cost>
-			<text>Enferne 1 Würfel. Lege 2 Neuheiten-Würfel in deinen Becher.</text>
+			<text>Enferne 1 Würfel und lege 2 Neuheiten-Würfel in deinen Becher.</text>
 		</face>
 		<face>
 			<name>Piratenwelt</name>

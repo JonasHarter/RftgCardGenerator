@@ -66,8 +66,11 @@ public class InnerFaceBuilder extends NodeBuilder {
 
 	private String getImage() {
 		var imageFileOpt = Stuff.lookForImage(imageFolder, face.getName());
-		if (!imageFileOpt.isPresent())
+		if (!imageFileOpt.isPresent()) {
+//			System.out.print("TODO: Image for " + face.getName());
+//			return "";
 			throw new RuntimeException("No image for: " + face.getName());
+		}
 		String encodeBytes;
 		try {
 			encodeBytes = Base64.getEncoder().encodeToString(Files.readAllBytes(imageFileOpt.get().toPath()));
@@ -151,6 +154,11 @@ public class InnerFaceBuilder extends NodeBuilder {
 		if (face.getText() != null) {
 			Element flowPara1 = document.createElement("flowPara");
 			insertDiceTextColoured(flowPara1, face.getText());
+			flowRoot.appendChild(flowPara1);
+		}
+		if (face.getText2() != null) {
+			Element flowPara1 = document.createElement("flowPara");
+			insertDiceTextColoured(flowPara1, face.getText2());
 			flowRoot.appendChild(flowPara1);
 		}
 		if (face.getTextSp() != null) {
@@ -331,14 +339,14 @@ public class InnerFaceBuilder extends NodeBuilder {
 		element.setAttribute("width", "63");
 		element.setAttribute("height", "22");
 		element.setAttribute("style", "fill:#bfbfbf;");
-		
+
 		Element border = document.createElement("rect");
 		border.setAttribute("x", "0");
 		border.setAttribute("y", "21.75");
 		border.setAttribute("width", "63");
 		border.setAttribute("height", "0.25");
 		border.setAttribute("style", "fill:#373737;");
-		
+
 		rootNode.appendChild(element);
 		rootNode.appendChild(border);
 	}
@@ -350,14 +358,14 @@ public class InnerFaceBuilder extends NodeBuilder {
 		element.setAttribute("width", "63");
 		element.setAttribute("height", "22");
 		element.setAttribute("style", "fill:#bfbfbf;");
-		
+
 		Element border = document.createElement("rect");
 		border.setAttribute("x", "0");
 		border.setAttribute("y", "66");
 		border.setAttribute("width", "63");
 		border.setAttribute("height", "0.25");
 		border.setAttribute("style", "fill:#373737;");
-		
+
 		rootNode.appendChild(element);
 		rootNode.appendChild(border);
 	}

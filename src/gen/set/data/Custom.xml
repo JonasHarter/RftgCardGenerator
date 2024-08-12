@@ -4,11 +4,11 @@
 			<name>xxx</name>
 			<cost>2</cost>
 			<phase>5</phase>
-			<text>Gründer-Würfel zählen als Farben Joker für ship und geben +1credit when trade.</text>
+			<text>Gründer-Würfel stimmen bem Verladen mit allen Farben überein.</text>
 		</face>
 		<face>
 			<name>xxx</name>
-			<cost>0</cost>
+			<cost>3</cost>
 			<colour>lightBlue</colour>
 			<text>Lege 1 Gründer-Würfel auf diese Welt.</text>
 		</face>

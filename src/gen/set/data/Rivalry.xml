@@ -82,13 +82,14 @@
 	<card cardType="double"> 
 		<face>
 			<name>Galaktischer Prognostiker</name>
-			<nameOverwrite>Quantencomputergestützte Prognose</nameOverwrite>
+			<nameOverwrite>Quantencomputergestütztes Suchverfahren</nameOverwrite>
 			<cost>1</cost>
 			<phase>0</phase>
 			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer nicht gewählten Phase in eine gewählte Phase versetzen.</text>
 		</face>
 		<face>
 			<name>Rand der Galaxis</name>
+			<nameOverwrite>Bewohnbarer Exoplanet</nameOverwrite>
 			<cost>0</cost>
 			<color>lightBlue</color>
 			<text>Lege 1 Pionier-Würfel in deinen Becher.</text>
@@ -116,14 +117,15 @@
 			<nameOverwrite>Subatomarer 3D-Druck</nameOverwrite>
 			<cost>2</cost>
 			<phase>5</phase>
-			<text>Tausche jedes Gut, das du von Oortsche Wolke Raffinerie verbraucht hast, gegen einen nicht-Anführer-Würfel.</text>
+			<text>Du kannst jedes Gut, das du von Schwarzschild-Raffinierie verbraucht hast, gegen einen nicht-Anführer-Würfel tauschen.</text>
 		</face>
 		<face>
 			<name>Oort-Wolken Raffinierie</name>
-			<nameOverwrite>Oortsche Wolke Raffinerie</nameOverwrite>
+			<nameOverwrite>Schwarzschild-Raffinierie</nameOverwrite>
 			<cost>2</cost>
 			<color>yellow</color>
-			<text>Du kannst Güter auf dieser Welt nicht handeln. Lege 1 Heimat-Würfel auf diese Welt und 1 Gründer-Würfel in deinen Becher.</text>
+			<text>Du kannst Güter auf dieser Welt nicht handeln.</text>
+			<text2>Lege 1 Heimat-Würfel auf diese Welt und 1 Gründer-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<!-- Starting Single Tiles -->
@@ -148,7 +150,7 @@
 	<card> 
 		<face>
 			<name>Genmanipulierte Bergbau-Maulwürfe</name>
-			<nameOverwrite>Planetenweiter Goldrausch</nameOverwrite>
+			<nameOverwrite>Planetenweite Goldfelder</nameOverwrite>
 			<cost>0</cost>
 			<color>brown</color>
 			<text>Entferne 1 deiner Würfel und lege 1 SelteneElemente- und 1 Gründer-Würfel in deine Bevölkerung.</text>
@@ -265,7 +267,8 @@
 			<nameOverwrite>Siedlung der Vertriebenen</nameOverwrite>
 			<cost>3</cost>
 			<color>grey</color>
-			<text>Entferne 1 Siedler, der diese Welt fertiggestellt hat. Lege 1 Militär- und 1 Pionier-Würfel in deine Bevölkerung.</text>
+			<text>Entferne 1 Siedler, der diese Welt fertiggestellt hat.</text>
+			<text2>Lege 1 Militär- und 1 Pionier-Würfel in deine Bevölkerung.</text2>
 			<textSp>Erhalte 2⬡.</textSp>
 		</face>
 	</card>
@@ -308,7 +311,7 @@
 		</face>
 		<face>
 			<name>Automatisierte Alien Fabrik</name>
-			<nameOverwrite>Zerstörte Dysonsphäre</nameOverwrite>
+			<nameOverwrite>Verfallene Dysonsphäre</nameOverwrite>
 			<cost>4</cost>
 			<color>yellow</color>
 			<imageOffset>3</imageOffset>
@@ -336,7 +339,7 @@
 	<card> 
 		<face>
 			<name>Gesellschaftliche Anpassung</name>
-			<nameOverwrite>Orbitale Werft</nameOverwrite>
+			<nameOverwrite>Laterale Spezialisierung</nameOverwrite>
 			<cost>1</cost>
 			<phase>0</phase>
 			<text>Nach dem Aufdecken kannst du 1 Arbeiter in einer gewählten Phase in eine andere gewählte Phase versetzen.</text>
@@ -376,10 +379,11 @@
 		</face>
 		<face>
 			<name>Geächteter Genmanipulationsgenetiker</name>
-			<nameOverwrite>Exzentrischer Genetiker</nameOverwrite>
+			<nameOverwrite>Gartenwelt</nameOverwrite>
 			<cost>3</cost>
 			<color>green</color>
-			<text>Du erhälst 2$. Lege 1 Gründer-Würfel in deinen Becher.</text>
+			<text>Du erhälst 2$.</text>
+			<text2>Lege 1 Gründer-Würfel in deinen Becher.</text2>
 		</face>
 	</card>
 	<card> 
@@ -409,10 +413,10 @@
 		</face>
 		<face>
 			<name>Untergetauchter Warlord</name>
-			<nameOverwrite>Loyaler Warlord</nameOverwrite>
+			<nameOverwrite>Festung des Kriegsfürsten</nameOverwrite>
+			<imageOffset>5</imageOffset>
 			<cost>2</cost>
 			<color>grey</color>
-			<imageOffset>8</imageOffset>
 			<text>Entferne 1 deiner Würfel und lege 1 Militär- und 1 Anführer-Würfel in deine Bevölkerung.</text>
 		</face>
 	</card>

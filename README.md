@@ -12,21 +12,16 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 # Explanation
 
 <p float="left">
-<img src="/readMe/1.png" width="250" />
+<img src="/readMe/1.png" width="500" />
 <img src="/readMe/2.png" width="250" />
 <img src="/readMe/3.png" width="250" />
-<img src="/readMe/4.png" width="250" />
+<img src="/readMe/4.png" width="500" />
 <img src="/readMe/5.png" width="250" />
 <img src="/readMe/6.png" width="250" />
 <img src="/readMe/7.png" width="250" />
-<img src="/readMe/8.png" width="250" />
-<img src="/readMe/9.png" width="250" />
 </p>
 
-The double-sized starting tiles are split, but marked with a black square that contains a number at the top corner.
-Pairs with identical numbers form a starting tile. 
-The starting worlds are marked like this as well, but without a number.<br />
-
+The starting worlds are marked in the top right corner.<br />
 All cards have a unique id at the bottom, ending in A or B. These ids allow to match corresponding pairs.<br />
 The phase icons are bigger and on the right of the image. There is an additional icon for cards that effect the assignment phase.<br />
 There are no icons for the specific card effects.<br />
@@ -41,6 +36,3 @@ The icons ⌈⌉ and ⌊⌋ denote rounding up or down.<br />
 - Bigger text to fill space
 - Center header vertically
 - Backside for single sided cards
-- Starting planets no A/B in id
-- Improve centering & shape of cost and plus
-- Change bg color back to #bfbfbf for proper printing

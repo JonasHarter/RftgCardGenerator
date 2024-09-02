@@ -11,6 +11,9 @@ This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<b
 
 They are designed to be printed as 63mm x 88mm and 89mm x 127mm.<br />
 The black border consists of 3mm bleed and 3mm border.<br />
+I used makeplayingcards.com to print the cards: <br />
+[Normal sized cards](https://www.makeplayingcards.com/design/custom-blank-card.html) <br />
+[Double sized cards](https://www.makeplayingcards.com/design/custom-3-5-x-5-game-cards.html)
 
 # Explanation
 

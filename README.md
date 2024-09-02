@@ -9,6 +9,9 @@ All images are AI generated with MidJourney.<br />
 This uses Inkscape and flowRoot (from svg 1.2), for conversion to png.<br />
 This uses the DM Serif font. It needs to be installed, so Inkscape can use it.<br />
 
+They are designed to be printed as 63mm x 88mm and 89mm x 127mm.<br />
+The black border consists of 3mm bleed and 3mm border.<br />
+
 # Explanation
 
 <p float="left">
